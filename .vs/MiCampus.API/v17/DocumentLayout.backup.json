@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "MiCampus\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:07:26.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MiCampus\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\WeatherForecast.cs",
+              "RelativeToolTip": "MiCampus\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:04:52.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
