@@ -1,38 +1,43 @@
 using MiCampus.Database;
+using MiCampus.Helpers;
+using MiCampus.Services;
+using MiCampus.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Ruta absoluta al archivo .mdf dentro de la carpeta "Data"
-var basePath = Path.Combine(Directory.GetCurrentDirectory(), "Data");
-
-// Crear la carpeta si no existe
-if (!Directory.Exists(basePath))
-    Directory.CreateDirectory(basePath);
-
-// Ruta completa al archivo .mdf
-var dbPath = Path.Combine(basePath, "CampusDB.mdf");
-
-// Cadena de conexión construida manualmente
-var connectionString = $"Server=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={dbPath};Integrated Security=True;Connect Timeout=30;";
-
 // Inyectar el DbContext con la cadena construida
 builder.Services.AddDbContext<CampusDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(builder.Configuration
+    .GetConnectionString("DefaultConnection")));
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
+
+
+// INFERFACES ERVICES
+builder.Services.AddTransient<IUsersServices, UsersServices>();
 
 // Agregar servicios
 builder.Services.AddControllers();
+
+
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Middleware y endpoints
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiCampus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d876efd09bbce7105ff893ba55c06c46b12c46a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+086bce7ade7ce4e336813a7a9d6198c1f09b0b0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiCampus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiCampus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

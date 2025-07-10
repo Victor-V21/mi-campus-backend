@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710073541_InitMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710073541_InitMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\helpers\\errormessagesidentiy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,14 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\constants\\httpstatuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\constants\\httpstatuscode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +110,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "serviceDependencies.local.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Properties\\serviceDependencies.local.json",
+              "RelativeDocumentMoniker": "MiCampus\\Properties\\serviceDependencies.local.json",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Properties\\serviceDependencies.local.json",
+              "RelativeToolTip": "MiCampus\\Properties\\serviceDependencies.local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T07:36:26.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250710073541_InitMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710073541_InitMigration.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710073541_InitMigration.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710073541_InitMigration.cs",
+              "RelativeToolTip": "MiCampus\\Migrations\\20250710073541_InitMigration.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T07:35:41.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MiCampus\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.Development.json",
+              "RelativeToolTip": "MiCampus\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T07:34:31.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.json",
+              "RelativeDocumentMoniker": "MiCampus\\appsettings.json",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.json",
+              "RelativeToolTip": "MiCampus\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T07:34:31.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Program.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Program.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Program.cs",
+              "RelativeToolTip": "MiCampus\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T07:30:32.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UserCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Users\\UserCreateDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Users\\UserCreateDto.cs",
@@ -103,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Users\\UserDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Users\\UserDto.cs",
@@ -116,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "UserEditDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Users\\UserEditDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Users\\UserEditDto.cs",
@@ -129,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "UserActionResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Users\\UserActionResponseDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Users\\UserActionResponseDto.cs",
@@ -142,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "HttpStatusCode.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Constants\\HttpStatusCode.cs",
               "RelativeDocumentMoniker": "MiCampus\\Constants\\HttpStatusCode.cs",
@@ -155,20 +240,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "MiCampus\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Controllers\\UsersController.cs",
               "RelativeToolTip": "MiCampus\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAA9wDMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T07:21:30.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ErrorMessagesIdentiy.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
               "RelativeDocumentMoniker": "MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
@@ -181,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "CampusDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\CampusDbContext.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\CampusDbContext.cs",
@@ -194,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Common\\ResponseDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Common\\ResponseDto.cs",
@@ -207,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\ResponseDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\ResponseDto.cs",
@@ -220,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "PaginationDto.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Dtos\\Common\\PaginationDto.cs",
               "RelativeDocumentMoniker": "MiCampus\\Dtos\\Common\\PaginationDto.cs",
@@ -233,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\Common\\BaseEntity.cs",
@@ -246,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "RoleEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\RoleEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\RoleEntity.cs",
@@ -259,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\UserEntity.cs",
@@ -272,26 +357,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AutoMapperProfiles.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
               "RelativeDocumentMoniker": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
               "RelativeToolTip": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T07:06:22.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "UsersServices.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\UsersServices.cs",
               "RelativeDocumentMoniker": "MiCampus\\Services\\UsersServices.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\UsersServices.cs",
               "RelativeToolTip": "MiCampus\\Services\\UsersServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T07:05:45.644Z",
               "EditorCaption": ""

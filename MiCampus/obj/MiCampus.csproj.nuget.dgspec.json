@@ -52,7 +52,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[15.0.0, )"
+              "version": "[14.0.0, )"
             },
             "JWT": {
               "target": "Package",

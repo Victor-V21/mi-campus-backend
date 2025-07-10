@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yXYuqL1IDRI=",
+  "dgSpecHash": "0In+dxMGTKg=",
   "success": true,
   "projectFilePath": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\MiCampus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Victor\\.nuget\\packages\\automapper\\15.0.0\\automapper.15.0.0.nupkg.sha512",
+    "C:\\Users\\Victor\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Victor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
