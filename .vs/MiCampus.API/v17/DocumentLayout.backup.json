@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710055313_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710055313_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\services\\interfaces\\iusersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\iusersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054646_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710054646_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054131_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710054131_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054023_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710054023_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710053441_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710053441_initMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710052215_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710052215_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710051236_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250710051236_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\micampus.api\\micampus\\micampus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,94 +70,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\Interfaces\\IUsersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\IUsersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\Interfaces\\IUsersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\IUsersServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T06:44:19.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250710055313_initMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710055313_initMigration.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710055313_initMigration.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710055313_initMigration.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710055313_initMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\UsersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\UsersServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:53:13.982Z",
+              "WhenOpened": "2025-07-10T06:43:43.211Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250710054646_initMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054646_initMigration.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710054646_initMigration.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054646_initMigration.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710054646_initMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:46:46.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250710054131_initMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054131_initMigration.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710054131_initMigration.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054131_initMigration.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710054131_initMigration.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:41:31.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20250710054023_initMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054023_initMigration.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710054023_initMigration.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710054023_initMigration.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710054023_initMigration.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAgwAgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:40:24.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250710053441_initMigration.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710053441_initMigration.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710053441_initMigration.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710053441_initMigration.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710053441_initMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:34:42.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20250710052215_init.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710052215_init.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710052215_init.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710052215_init.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710052215_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:22:15.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20250710051236_init.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710051236_init.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250710051236_init.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Migrations\\20250710051236_init.cs",
-              "RelativeToolTip": "MiCampus\\Migrations\\20250710051236_init.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAowAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T05:12:36.647Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
@@ -187,14 +106,14 @@
               "RelativeDocumentMoniker": "MiCampus\\Program.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Program.cs",
               "RelativeToolTip": "MiCampus\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T04:49:26.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "RoleEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\RoleEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\RoleEntity.cs",
@@ -202,25 +121,23 @@
               "RelativeToolTip": "MiCampus\\Database\\Entities\\RoleEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T04:31:54.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T04:31:54.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MiCampus",
+              "DocumentIndex": 5,
+              "Title": "MiCampus.csproj",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\MiCampus.csproj",
               "RelativeDocumentMoniker": "MiCampus\\MiCampus.csproj",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\MiCampus.csproj",
               "RelativeToolTip": "MiCampus\\MiCampus.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-10T04:26:07.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T04:26:07.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MiCampus\\Properties\\launchSettings.json",
@@ -228,25 +145,24 @@
               "RelativeToolTip": "MiCampus\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T04:25:39.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T04:25:39.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.Development.json",
               "RelativeDocumentMoniker": "MiCampus\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.Development.json",
               "RelativeToolTip": "MiCampus\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-10T04:25:30.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\appsettings.json",
               "RelativeDocumentMoniker": "MiCampus\\appsettings.json",
@@ -254,12 +170,11 @@
               "RelativeToolTip": "MiCampus\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-10T04:25:29.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T04:25:29.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\Common\\BaseEntity.cs",
@@ -267,12 +182,11 @@
               "RelativeToolTip": "MiCampus\\Database\\Entities\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T04:23:34.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T04:23:34.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\Entities\\UserEntity.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\UserEntity.cs",
@@ -280,12 +194,11 @@
               "RelativeToolTip": "MiCampus\\Database\\Entities\\UserEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:21:43.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:21:43.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "CampusDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\MiCampus.API\\MiCampus\\Database\\CampusDbContext.cs",
               "RelativeDocumentMoniker": "MiCampus\\Database\\CampusDbContext.cs",
@@ -293,12 +206,14 @@
               "RelativeToolTip": "MiCampus\\Database\\CampusDbContext.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T03:21:08.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T03:21:08.519Z"
             }
           ]
         }
       ]
     }
+  ],
+  "FramesPinnedWhenTheyWereClosed": [
+    1700341462
   ]
 }

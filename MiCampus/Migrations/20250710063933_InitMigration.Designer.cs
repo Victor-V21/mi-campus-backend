@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MiCampus.Migrations
 {
     [DbContext(typeof(CampusDbContext))]
-    [Migration("20250710055313_initMigration")]
-    partial class initMigration
+    [Migration("20250710063933_InitMigration")]
+    partial class InitMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

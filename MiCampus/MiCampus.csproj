@@ -24,12 +24,4 @@
 	  </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Dtos\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Data\" />
-    <Folder Include="Services\Interfaces\" />
-  </ItemGroup>
-
 </Project>
