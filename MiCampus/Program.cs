@@ -1,4 +1,5 @@
 using MiCampus.Database;
+using MiCampus.Database.Entities;
 using MiCampus.Helpers;
 using MiCampus.Services;
 using MiCampus.Services.Interfaces;
@@ -16,8 +17,12 @@ builder.Services.AddDbContext<CampusDbContext>(options =>
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 
-// INFERFACES ERVICES
+// INFERFACES SERVICES
 builder.Services.AddTransient<IUsersServices, UsersServices>();
+//builder.Services.AddTransient<IRolesService, RolesService>();
+builder.Services.AddIdentityCore<RoleEntity>()
+    .AddRoles<RoleEntity>()
+    .AddEntityFrameworkStores<CampusDbContext>();
 
 // Agregar servicios
 builder.Services.AddControllers();

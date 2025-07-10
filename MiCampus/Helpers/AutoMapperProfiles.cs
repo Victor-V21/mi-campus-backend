@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MiCampus.Database.Entities;
+using MiCampus.Dtos.Security.Roles;
 using MiCampus.Dtos.Security.Users;
 
 namespace MiCampus.Helpers
@@ -17,6 +18,12 @@ namespace MiCampus.Helpers
             CreateMap<UserCreateDto, UserEntity>()
                 .ForMember(dest => dest.UserName, org => org.MapFrom(src => src.Email));
             CreateMap<UserEditDto, UserEntity>();
+
+            // Roles mappers
+            CreateMap<RoleEntity, RoleDto>();
+            CreateMap<RoleEntity, RoleActionResponseDto>();
+            CreateMap<RoleCreateDto, RoleEntity>();
+            CreateMap<RoleEditDto, RoleEntity>();
         }
 
     }
