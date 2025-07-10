@@ -1,4 +1,13 @@
+using MiCampus.Database;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Add database
+builder.Services.AddDbContext<CampusDbContext>(options =>
+    options.UseSqlServer(builder.Configuration
+    .GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 
