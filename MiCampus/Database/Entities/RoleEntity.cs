@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Persons.API.Database.Entities
+namespace MiCampus.Database.Entities
 {
     public class RoleEntity : IdentityRole
     {

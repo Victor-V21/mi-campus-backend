@@ -1,4 +1,4 @@
-﻿namespace Persons.API.Dtos.Common
+﻿namespace MiCampus.Dtos.Common
 {
     public class PaginationDto<T>
     {

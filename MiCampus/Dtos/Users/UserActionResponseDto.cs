@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Persons.API.Dtos.Security.Users
+namespace MiCampus.Dtos.Security.Users
 {
     public class UserActionResponseDto
     {

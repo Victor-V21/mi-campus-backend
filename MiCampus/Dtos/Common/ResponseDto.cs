@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Persons.API.Dtos.Common
+namespace MiCampus.Dtos.Common
 {
     public class ResponseDto<T>
     {

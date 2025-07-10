@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Persons.API.Dtos.Security.Users
+namespace MiCampus.Dtos.Security.Users
 {
     public class UserCreateDto
     {

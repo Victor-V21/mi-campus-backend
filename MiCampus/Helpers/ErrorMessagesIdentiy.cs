@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Persons.API.Helpers
+namespace MiCampus.Helpers
 {
     public class ErrorMessagesIdentity : IdentityErrorDescriber
     {

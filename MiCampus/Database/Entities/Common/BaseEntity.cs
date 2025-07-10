@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Persons.API.Database.Entities.Common
+namespace Micampus.Database.Entities.Common
 {
     public class BaseEntity
     {

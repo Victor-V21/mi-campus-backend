@@ -1,4 +1,4 @@
-﻿namespace Persons.API.Dtos.Security.Users
+﻿namespace MiCampus.Dtos.Security.Users
 {
     public class UserEditDto : UserCreateDto
     { 

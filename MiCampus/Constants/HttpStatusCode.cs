@@ -1,4 +1,4 @@
-﻿namespace Persons.API.Constants
+﻿namespace MiCampus.Constants
 {
     public static class HttpStatusCode
     {

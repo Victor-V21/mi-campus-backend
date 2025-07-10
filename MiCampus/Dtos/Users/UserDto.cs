@@ -1,4 +1,4 @@
-﻿namespace Persons.API.Dtos.Security.Users
+﻿namespace MiCampus.Dtos.Security.Users
 {
     public class UserDto // utilizado para lectura de datos de la base de datos
     {
