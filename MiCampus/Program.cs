@@ -9,20 +9,22 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Inyectar el DbContext con la cadena construida
+// db
 builder.Services.AddDbContext<CampusDbContext>(options =>
-    options.UseSqlServer(builder.Configuration
-    .GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddIdentity<UserEntity, RoleEntity>()
+    .AddEntityFrameworkStores<CampusDbContext>();
+
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
-
 // INFERFACES SERVICES
 builder.Services.AddTransient<IUsersServices, UsersServices>();
-//builder.Services.AddTransient<IRolesService, RolesService>();
-builder.Services.AddIdentityCore<RoleEntity>()
-    .AddRoles<RoleEntity>()
-    .AddEntityFrameworkStores<CampusDbContext>();
+builder.Services.AddTransient<IRolesService, RolesService>();
+//builder.Services.AddIdentityCore<RoleEntity>()
+//    .AddRoles<RoleEntity>()
+//    .AddEntityFrameworkStores<CampusDbContext>();
 
 // Agregar servicios
 builder.Services.AddControllers();

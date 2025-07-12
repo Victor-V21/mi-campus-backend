@@ -33,5 +33,13 @@ namespace MiCampus.Database
             builder.Entity<IdentityUserToken<string>>().ToTable("sec_users_tokens");
         }
 
+        public DbSet<CampusEntity> Campuses { get; set; }
+        public DbSet<ContentEntity> Contents { get; set; }
+        public DbSet<ContentFeedbackEntity> ContentsFeedbacks { get; set; }
+        public DbSet<ContentImageEntity> ContentsImages { get; set; }
+        public DbSet<SubjectEntity> Subjetcs { get; set; }
+        public DbSet<SubjectTakenEntity> SubjectsTaken { get; set; }
+        public DbSet<UniversityCareerEntity> UniversityCareers { get; set; }
+
     }
 }   

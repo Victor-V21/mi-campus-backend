@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MiCampus.Dtos.Security.Users
 {
@@ -19,9 +20,12 @@ namespace MiCampus.Dtos.Security.Users
         [EmailAddress(ErrorMessage = "El {0} no tiene formato de correo válido")]
         [StringLength(256, ErrorMessage = "El {0} no puede tener más de {1} caracteres")]
         public string Email { get; set; }
+        
+        [Display(Name = "Número de Cuenta")]
+        [Required(ErrorMessage = "Los {0} son requeridos")]
+        [StringLength(50, ErrorMessage = "Los {0} no pueden tener más de {1} caracteres.")]
+        public string AccountNumber { get; set; }
 
-        //[StringLength(256)]
-        //public string AvatarUrl { get; set; }
         [Display(Name = "Fecha de Nacimiento")]
         public DateTime BirthDay { get; set; }
         
