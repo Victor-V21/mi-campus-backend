@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MiCampus.Database.Entities;
+using MiCampus.Dtos.Campuses;
 using MiCampus.Dtos.Security.Roles;
 using MiCampus.Dtos.Security.Users;
 
@@ -24,7 +25,15 @@ namespace MiCampus.Helpers
             CreateMap<RoleEntity, RoleActionResponseDto>();
             CreateMap<RoleCreateDto, RoleEntity>();
             CreateMap<RoleEditDto, RoleEntity>();
-        }
 
+
+            //Campus mappers
+
+            CreateMap<CampusesActionResponseDto, CampusEntity>().ReverseMap();
+            CreateMap<CampusesDto, CampusEntity>().ReverseMap();
+            CreateMap<CampusesCreateDto, CampusEntity>().ReverseMap();
+            CreateMap<CampusesEditDto, CampusEntity>();
+
+        }
     }
 }

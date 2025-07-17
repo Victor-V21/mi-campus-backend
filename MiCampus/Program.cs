@@ -22,11 +22,9 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 // INFERFACES SERVICES
 builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
-//builder.Services.AddIdentityCore<RoleEntity>()
-//    .AddRoles<RoleEntity>()
-//    .AddEntityFrameworkStores<CampusDbContext>();
+builder.Services.AddTransient<ICampusesServices, CapusesServices>();
+builder.Services.AddTransient<ICareersServices, CareersServices>();
 
-// Agregar servicios
 builder.Services.AddControllers();
 
 
