@@ -22,19 +22,43 @@ namespace MiCampus.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CampusEntityUniversityCareerEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.CampusCareerEntity", b =>
                 {
-                    b.Property<string>("CareersId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
 
-                    b.Property<string>("CareersIds")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<string>("CampusId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_campus");
 
-                    b.HasKey("CareersId", "CareersIds");
+                    b.Property<string>("CareerId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_career");
 
-                    b.HasIndex("CareersIds");
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
 
-                    b.ToTable("CampusEntityUniversityCareerEntity");
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CampusId");
+
+                    b.HasIndex("CareerId");
+
+                    b.ToTable("campuses_careers");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.CampusEntity", b =>
@@ -42,10 +66,6 @@ namespace MiCampus.Migrations
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
-
-                    b.PrimitiveCollection<string>("CareersIds")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("careers_ids");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2")
@@ -80,23 +100,11 @@ namespace MiCampus.Migrations
                     b.ToTable("campuses");
                 });
 
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerEntity", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
-
-                    b.Property<string>("Body")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("body");
-
-                    b.Property<string>("ContentType")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("content_type");
-
-                    b.Property<string>("CoverImage")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("cover_image");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2")
@@ -106,33 +114,162 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
 
-                    b.Property<DateTime?>("EventDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("event_date");
-
-                    b.Property<string>("EventStatus")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("event_status");
+                        .HasColumnName("description");
 
-                    b.Property<TimeSpan?>("EventTime")
-                        .HasColumnType("time")
-                        .HasColumnName("event_time");
+                    b.Property<string>("Grade")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("grade");
 
-                    b.Property<bool>("IsModerated")
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("name");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("careers");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<string>("CareerId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_career");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<string>("SubjectId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_clase");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CareerId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("careers_subjects");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.ChatEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("DateModify")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_modify");
+
+                    b.Property<DateTime>("DateSend")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_send");
+
+                    b.Property<string>("EmisorId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_emisor");
+
+                    b.Property<bool>("Received")
                         .HasColumnType("bit")
-                        .HasColumnName("is_moderated");
+                        .HasColumnName("received");
 
-                    b.Property<string>("Location")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("location");
+                    b.Property<string>("ReceptorId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_receptor");
 
-                    b.Property<string>("MapLocation")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("map_location");
+                    b.Property<bool>("Seen")
+                        .HasColumnType("bit")
+                        .HasColumnName("seen");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("title");
+                        .HasColumnName("text");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmisorId");
+
+                    b.HasIndex("ReceptorId");
+
+                    b.ToTable("chats");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.NotificationEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("DateCreation")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_creation");
+
+                    b.Property<DateTime>("DateModify")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_modify");
+
+                    b.Property<bool>("Seen")
+                        .HasColumnType("bit")
+                        .HasColumnName("seen");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("text");
+
+                    b.Property<string>("TypeId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_type");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2")
@@ -144,28 +281,22 @@ namespace MiCampus.Migrations
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)")
-                        .HasColumnName("user_id");
+                        .HasColumnName("id_user");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TypeId");
+
                     b.HasIndex("UserId");
 
-                    b.ToTable("contents");
+                    b.ToTable("notifications");
                 });
 
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentFeedbackEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.NotificationTypeEntity", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
-
-                    b.Property<string>("Comment")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("comment");
-
-                    b.Property<string>("ContentId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("content_id");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2")
@@ -175,9 +306,56 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
 
-                    b.Property<int?>("Rating")
-                        .HasColumnType("int")
-                        .HasColumnName("rating");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("name");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("notification_types");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("DateCreate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_create");
+
+                    b.Property<DateTime>("DateModify")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_modify");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("text");
+
+                    b.Property<string>("TypeId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_type");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2")
@@ -189,26 +367,22 @@ namespace MiCampus.Migrations
 
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)")
-                        .HasColumnName("user_id");
+                        .HasColumnName("id_user");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ContentId");
+                    b.HasIndex("TypeId");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("contents_feedbacks");
+                    b.ToTable("publications");
                 });
 
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentImageEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationTypeEntity", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
-
-                    b.Property<string>("ContentId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("content_id");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2")
@@ -218,9 +392,13 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
 
-                    b.Property<string>("ImageUrl")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)")
-                        .HasColumnName("image_url");
+                        .HasColumnName("description");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("name");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2")
@@ -232,9 +410,7 @@ namespace MiCampus.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ContentId");
-
-                    b.ToTable("content_images");
+                    b.ToTable("publications_types");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.RoleEntity", b =>
@@ -275,103 +451,9 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
-                    b.Property<string>("CareerId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("career_id");
-
                     b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("code");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("created_date");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("created_by");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("name");
-
-                    b.Property<string>("RequisiteId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("prerequisite_id");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("updated_date");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("updated_by");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CareerId");
-
-                    b.HasIndex("RequisiteId");
-
-                    b.ToTable("subjects");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.SubjectTakenEntity", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("id");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("created_date");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("created_by");
-
-                    b.Property<int>("Grade")
-                        .HasColumnType("int")
-                        .HasColumnName("grade");
-
-                    b.Property<int>("Period")
-                        .HasColumnType("int")
-                        .HasColumnName("period");
-
-                    b.Property<string>("SubjectId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("subject_id");
-
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("updated_date");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("updated_by");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("user_id");
-
-                    b.Property<int>("Year")
-                        .HasColumnType("int")
-                        .HasColumnName("year");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SubjectId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("subjects_taken");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.UniversityCareerEntity", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("id");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2")
@@ -399,7 +481,87 @@ namespace MiCampus.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("university_careers");
+                    b.ToTable("subjects");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.SubjectMovementEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("description");
+
+                    b.Property<string>("Movement")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("movement");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("subjects_movements");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.SubjectUserEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<string>("MovementId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_movement");
+
+                    b.Property<string>("SubjectId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_subject");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_users");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovementId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("subject_users");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.UserEntity", b =>
@@ -410,23 +572,9 @@ namespace MiCampus.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("AccountNumber")
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)")
-                        .HasColumnName("account_number");
-
-                    b.Property<string>("AvatarUrl")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
-                        .HasColumnName("avatar_url");
-
-                    b.Property<DateTime>("BirthDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("birth_date");
-
-                    b.Property<string>("CareerId")
+                    b.Property<string>("CampusId")
                         .HasColumnType("nvarchar(450)")
-                        .HasColumnName("career_id");
+                        .HasColumnName("id_campus");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -440,17 +588,11 @@ namespace MiCampus.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("first_name");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit")
-                        .HasColumnName("is_active");
-
                     b.Property<string>("LastName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("last_name");
 
                     b.Property<bool>("LockoutEnabled")
@@ -458,6 +600,10 @@ namespace MiCampus.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<int>("NoAccount")
+                        .HasColumnType("int")
+                        .HasColumnName("no_account");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -476,10 +622,6 @@ namespace MiCampus.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<DateTime>("RegistrationDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("registration_date");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -492,7 +634,7 @@ namespace MiCampus.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CareerId");
+                    b.HasIndex("CampusId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -611,78 +753,96 @@ namespace MiCampus.Migrations
                     b.ToTable("sec_users_tokens", (string)null);
                 });
 
-            modelBuilder.Entity("CampusEntityUniversityCareerEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.CampusCareerEntity", b =>
                 {
-                    b.HasOne("MiCampus.Database.Entities.UniversityCareerEntity", null)
+                    b.HasOne("MiCampus.Database.Entities.CampusEntity", "Campus")
                         .WithMany()
-                        .HasForeignKey("CareersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CampusId");
 
-                    b.HasOne("MiCampus.Database.Entities.CampusEntity", null)
+                    b.HasOne("MiCampus.Database.Entities.CareerEntity", "Career")
                         .WithMany()
-                        .HasForeignKey("CareersIds")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentEntity", b =>
-                {
-                    b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentFeedbackEntity", b =>
-                {
-                    b.HasOne("MiCampus.Database.Entities.ContentEntity", "Content")
-                        .WithMany("Feedbacks")
-                        .HasForeignKey("ContentId");
-
-                    b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Content");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentImageEntity", b =>
-                {
-                    b.HasOne("MiCampus.Database.Entities.ContentEntity", "Content")
-                        .WithMany("Images")
-                        .HasForeignKey("ContentId");
-
-                    b.Navigation("Content");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.SubjectEntity", b =>
-                {
-                    b.HasOne("MiCampus.Database.Entities.UniversityCareerEntity", "Career")
-                        .WithMany("Subjects")
                         .HasForeignKey("CareerId");
 
-                    b.HasOne("MiCampus.Database.Entities.SubjectEntity", "Requisite")
-                        .WithMany("Requisites")
-                        .HasForeignKey("RequisiteId");
+                    b.Navigation("Campus");
+
+                    b.Navigation("Career");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.CareerEntity", "Career")
+                        .WithMany()
+                        .HasForeignKey("CareerId");
+
+                    b.HasOne("MiCampus.Database.Entities.SubjectEntity", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectId");
 
                     b.Navigation("Career");
 
-                    b.Navigation("Requisite");
+                    b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("MiCampus.Database.Entities.SubjectTakenEntity", b =>
+            modelBuilder.Entity("MiCampus.Database.Entities.ChatEntity", b =>
                 {
+                    b.HasOne("MiCampus.Database.Entities.UserEntity", "Emisor")
+                        .WithMany()
+                        .HasForeignKey("EmisorId");
+
+                    b.HasOne("MiCampus.Database.Entities.UserEntity", "Receptor")
+                        .WithMany()
+                        .HasForeignKey("ReceptorId");
+
+                    b.Navigation("Emisor");
+
+                    b.Navigation("Receptor");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.NotificationEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.NotificationTypeEntity", "Type")
+                        .WithMany()
+                        .HasForeignKey("TypeId");
+
+                    b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Type");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.PublicationTypeEntity", "Type")
+                        .WithMany()
+                        .HasForeignKey("TypeId");
+
+                    b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Type");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.SubjectUserEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.SubjectMovementEntity", "Movement")
+                        .WithMany()
+                        .HasForeignKey("MovementId");
+
                     b.HasOne("MiCampus.Database.Entities.SubjectEntity", "Subject")
-                        .WithMany("SubjectTaken")
+                        .WithMany()
                         .HasForeignKey("SubjectId");
 
                     b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+
+                    b.Navigation("Movement");
 
                     b.Navigation("Subject");
 
@@ -691,11 +851,11 @@ namespace MiCampus.Migrations
 
             modelBuilder.Entity("MiCampus.Database.Entities.UserEntity", b =>
                 {
-                    b.HasOne("MiCampus.Database.Entities.UniversityCareerEntity", "Career")
-                        .WithMany("Users")
-                        .HasForeignKey("CareerId");
+                    b.HasOne("MiCampus.Database.Entities.CampusEntity", "Campus")
+                        .WithMany()
+                        .HasForeignKey("CampusId");
 
-                    b.Navigation("Career");
+                    b.Navigation("Campus");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -747,27 +907,6 @@ namespace MiCampus.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.ContentEntity", b =>
-                {
-                    b.Navigation("Feedbacks");
-
-                    b.Navigation("Images");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.SubjectEntity", b =>
-                {
-                    b.Navigation("Requisites");
-
-                    b.Navigation("SubjectTaken");
-                });
-
-            modelBuilder.Entity("MiCampus.Database.Entities.UniversityCareerEntity", b =>
-                {
-                    b.Navigation("Subjects");
-
-                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }

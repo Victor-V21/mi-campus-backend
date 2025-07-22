@@ -26,13 +26,12 @@ namespace MiCampus.Helpers
             CreateMap<RoleCreateDto, RoleEntity>();
             CreateMap<RoleEditDto, RoleEntity>();
 
-
             //Campus mappers
 
-            CreateMap<CampusesActionResponseDto, CampusEntity>().ReverseMap();
-            CreateMap<CampusesDto, CampusEntity>().ReverseMap();
-            CreateMap<CampusesCreateDto, CampusEntity>().ReverseMap();
-            CreateMap<CampusesEditDto, CampusEntity>();
+            //CreateMap<CampusesActionResponseDto, CampusEntity>().ReverseMap();
+            //CreateMap<CampusesDto, CampusEntity>().ReverseMap();
+            //CreateMap<CampusesCreateDto, CampusEntity>().ReverseMap();
+            //CreateMap<CampusesEditDto, CampusEntity>();
 
         }
     }

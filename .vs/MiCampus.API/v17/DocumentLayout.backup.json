@@ -3,56 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\controllers\\careerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\careerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\interfaces\\icareersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\icareersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\careersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\careersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\dtos\\careers\\careeractionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\dtos\\careers\\careeractionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\capusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\capusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\database\\entities\\contentimageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\database\\entities\\contentimageentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\helpers\\errormessagesidentiy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\helpers\\errormessagesidentiy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\database\\entities\\universitycareerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\database\\entities\\universitycareerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\interfaces\\icampusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\icampusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\dtos\\campuses\\campusesactionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\dtos\\campuses\\campusesactionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\controllers\\careerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\careerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\campusescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\helpers\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\capusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\capusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\interfaces\\icampusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\icampusesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\interfaces\\isubjectsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\isubjectsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\interfaces\\icareersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\icareersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\subjectsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\subjectsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\careersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\careersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\database\\campusdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\database\\campusdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\database\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\database\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\database\\entities\\roleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\database\\entities\\roleentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,106 +102,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CareerActionResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Dtos\\Careers\\CareerActionResponse.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Dtos\\Careers\\CareerActionResponse.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Dtos\\Careers\\CareerActionResponse.cs",
-              "RelativeToolTip": "MiCampus\\Dtos\\Careers\\CareerActionResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T07:12:37.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CareersController.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CareersController.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Controllers\\CareersController.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CareersController.cs",
-              "RelativeToolTip": "MiCampus\\Controllers\\CareersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAzAAAAAAAAAA==",
+              "Title": "20250722204506_RecreateDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs",
+              "RelativeToolTip": "MiCampus\\Migrations\\20250722204506_RecreateDatabase.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T07:11:09.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Program.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
-              "RelativeToolTip": "MiCampus\\Program.cs",
-              "ViewState": "AgIAAAkAAABgZmZmZmYkwBkAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T07:09:55.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContentImageEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\ContentImageEntity.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\ContentImageEntity.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\ContentImageEntity.cs",
-              "RelativeToolTip": "MiCampus\\Database\\Entities\\ContentImageEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:32:46.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UniversityCareerEntity.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\UniversityCareerEntity.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\UniversityCareerEntity.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\UniversityCareerEntity.cs",
-              "RelativeToolTip": "MiCampus\\Database\\Entities\\UniversityCareerEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T06:32:17.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsersServices.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\UsersServices.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
-              "RelativeToolTip": "MiCampus\\Services\\UsersServices.cs",
-              "ViewState": "AgIAAFwBAAAAoJmZmZnpv2MAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T04:21:50.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RolesService.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\RolesService.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\RolesService.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\RolesService.cs",
-              "RelativeToolTip": "MiCampus\\Services\\RolesService.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T04:20:31.276Z",
+              "WhenOpened": "2025-07-22T20:45:06.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CareersServices.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CareersServices.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\CareersServices.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CareersServices.cs",
-              "RelativeToolTip": "MiCampus\\Services\\CareersServices.cs",
-              "ViewState": "AgIAAHwAAAAAnJmZmZkJwHsAAAAhAAAAAAAAAA==",
+              "Title": "UsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\UsersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\UsersServices.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T04:16:33.814Z",
+              "WhenOpened": "2025-07-22T20:39:37.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErrorMessagesIdentiy.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
+              "RelativeToolTip": "MiCampus\\Helpers\\ErrorMessagesIdentiy.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:39:23.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:35:35.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CampusesActionResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Dtos\\Campuses\\CampusesActionResponseDto.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Dtos\\Campuses\\CampusesActionResponseDto.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Dtos\\Campuses\\CampusesActionResponseDto.cs",
+              "RelativeToolTip": "MiCampus\\Dtos\\Campuses\\CampusesActionResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:35:12.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CareersController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CareersController.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Controllers\\CareersController.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CareersController.cs",
+              "RelativeToolTip": "MiCampus\\Controllers\\CareersController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAADYAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:34:36.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CampusesController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CampusesController.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Controllers\\CampusesController.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CampusesController.cs",
+              "RelativeToolTip": "MiCampus\\Controllers\\CampusesController.cs",
+              "ViewState": "AgIAAAMAAABYAAAAAAAqwBAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:33:50.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISubjectsServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ISubjectsServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\ISubjectsServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ISubjectsServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\ISubjectsServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:31:46.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICareersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ICareersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\ICareersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ICareersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\ICareersServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:31:26.699Z",
               "EditorCaption": ""
             },
             {
@@ -188,58 +225,126 @@
               "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\ICampusesServices.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ICampusesServices.cs",
               "RelativeToolTip": "MiCampus\\Services\\Interfaces\\ICampusesServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T04:16:17.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICareersServices.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ICareersServices.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\ICareersServices.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\ICareersServices.cs",
-              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\ICareersServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T02:03:45.772Z",
+              "WhenOpened": "2025-07-22T20:31:21.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CampusesController.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CampusesController.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Controllers\\CampusesController.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\CampusesController.cs",
-              "RelativeToolTip": "MiCampus\\Controllers\\CampusesController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T01:59:28.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AutoMapperProfiles.cs",
-              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
-              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Helpers\\AutoMapperProfiles.cs",
-              "RelativeToolTip": "MiCampus\\Helpers\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T01:56:00.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CapusesServices.cs",
               "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CapusesServices.cs",
               "RelativeDocumentMoniker": "MiCampus\\Services\\CapusesServices.cs",
               "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CapusesServices.cs",
               "RelativeToolTip": "MiCampus\\Services\\CapusesServices.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAmwNkAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T23:33:22.477Z",
+              "WhenOpened": "2025-07-22T20:30:51.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SubjectsServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\SubjectsServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\SubjectsServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\SubjectsServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\SubjectsServices.cs",
+              "ViewState": "AgIAABgAAAAAZmZmZmYSwLIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:30:20.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RolesService.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\RolesService.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\RolesService.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\RolesService.cs",
+              "RelativeToolTip": "MiCampus\\Services\\RolesService.cs",
+              "ViewState": "AgIAANMAAAAAzMzMzMwQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:30:14.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CareersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CareersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\CareersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\CareersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\CareersServices.cs",
+              "ViewState": "AgIAADgAAAAANDMzMzPjvzUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:27:34.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MiCampus\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\appsettings.Development.json",
+              "RelativeToolTip": "MiCampus\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-22T20:23:37.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Program.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
+              "RelativeToolTip": "MiCampus\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAWwAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T20:23:09.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RoleEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\RoleEntity.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\RoleEntity.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\RoleEntity.cs",
+              "RelativeToolTip": "MiCampus\\Database\\Entities\\RoleEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T19:09:40.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Database\\Entities\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "MiCampus\\Database\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T19:09:09.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CampusDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\CampusDbContext.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Database\\CampusDbContext.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Database\\CampusDbContext.cs",
+              "RelativeToolTip": "MiCampus\\Database\\CampusDbContext.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T19:08:15.639Z",
               "EditorCaption": ""
             }
           ]

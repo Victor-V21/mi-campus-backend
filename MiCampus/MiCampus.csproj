@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Database\Entities\Olds\**" />
+    <Content Remove="Database\Entities\Olds\**" />
+    <EmbeddedResource Remove="Database\Entities\Olds\**" />
+    <None Remove="Database\Entities\Olds\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="JWT" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.6" />

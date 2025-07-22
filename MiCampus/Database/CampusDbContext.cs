@@ -34,12 +34,17 @@ namespace MiCampus.Database
         }
 
         public DbSet<CampusEntity> Campuses { get; set; }
-        public DbSet<ContentEntity> Contents { get; set; }
-        public DbSet<ContentFeedbackEntity> ContentsFeedbacks { get; set; }
-        public DbSet<ContentImageEntity> ContentsImages { get; set; }
-        public DbSet<SubjectEntity> Subjetcs { get; set; }
-        public DbSet<SubjectTakenEntity> SubjectsTaken { get; set; }
-        public DbSet<UniversityCareerEntity> UniversityCareers { get; set; }
-
+        public DbSet<CampusCareerEntity> CampusCareers { get; set; }
+        public DbSet<CareerEntity> Careers { get; set; }
+        public DbSet<CareerSubjectEntity> CareerSubjects { get; set; }
+        public DbSet<ChatEntity> Chats { get; set; }
+        public DbSet<NotificationEntity> Notifications{ get; set; }
+        public DbSet<NotificationTypeEntity> NotificationsTypes { get; set; }
+        public DbSet<PublicationEntity> Publications { get; set; }
+        public DbSet<PublicationTypeEntity> PublicationsTypes { get; set; }
+        public DbSet<SubjectEntity> Subjects { get; set; }
+        public DbSet<SubjectMovementEntity> SubjectMovements { get; set; }
+        public DbSet<SubjectUserEntity> SubjectsUsers { get; set; }
+        public DbSet<NotificationTypeEntity> NotificationTypes { get; set; }
     }
 }   
