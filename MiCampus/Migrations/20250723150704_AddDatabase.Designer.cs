@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MiCampus.Migrations
 {
     [DbContext(typeof(CampusDbContext))]
-    [Migration("20250722204506_RecreateDatabase")]
-    partial class RecreateDatabase
+    [Migration("20250723150704_AddDatabase")]
+    partial class AddDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

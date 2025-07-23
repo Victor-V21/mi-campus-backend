@@ -10,8 +10,17 @@ using Scalar.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // db
+
+// Conexión a la base de datos WINDOWS
 builder.Services.AddDbContext<CampusDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
+// para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
+/*
+builder.Services.AddDbContext<CampusDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
+*/
 
 builder.Services.AddIdentity<UserEntity, RoleEntity>()
     .AddEntityFrameworkStores<CampusDbContext>();
