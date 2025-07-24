@@ -30,6 +30,8 @@ namespace MiCampus.Services
             PAGE_SIZE_LIMIT = _configuration.GetValue<int>("PageSizeLimit");
         }
 
+
+
         // Servicio para listar los campus
 
         //public async Task<ResponseDto<PaginationDto<List<CampusesDto>>>> GetListAsync(

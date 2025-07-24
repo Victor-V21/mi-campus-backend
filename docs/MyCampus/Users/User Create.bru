@@ -1,0 +1,26 @@
+meta {
+  name: User Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/users
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstName": "pablo",
+    "lastName": "pedro",
+    "email": "pablo@me.hn",
+    "noNumber": 1,
+    "birthDay": "2025-07-23",
+    "roles": [
+      ""
+    ],
+    "password": "1234",
+    "confirmPassword": "1234"
+  }
+}

@@ -1,35 +1,35 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using MiCampus.Database.Entities;
 
 namespace MiCampus.Dtos.Security.Users
 {
     public class UserCreateDto
     {
-        [Display(Name = "Nombres")]
-        [Required(ErrorMessage = "Los {0} son requeridos")]
-        [StringLength(50, ErrorMessage = "Los {0} no pueden tener más de {1} caracteres.")]
+        [Display(Name = "first_name")]
         public string FirstName { get; set; }
 
-        [Display(Name = "Apellidos")]
-        [Required(ErrorMessage = "Los {0} son requeridos")]
-        [StringLength(50, ErrorMessage = "Los {0} no pueden tener más de {1} caracteres.")]
+        [Display(Name = "last_name")]
         public string LastName { get; set; }
 
         [Display(Name = "Correo Electrónico")]
         [Required(ErrorMessage = "El {0} es requerido")]
-        [EmailAddress(ErrorMessage = "El {0} no tiene formato de correo válido")]
+        [EmailAddress(ErrorMessage = "El {0} no tiene un formato de correo válido")]
         [StringLength(256, ErrorMessage = "El {0} no puede tener más de {1} caracteres")]
         public string Email { get; set; }
-        
-        [Display(Name = "Número de Cuenta")]
-        [Required(ErrorMessage = "Los {0} son requeridos")]
-        [StringLength(50, ErrorMessage = "Los {0} no pueden tener más de {1} caracteres.")]
-        public string AccountNumber { get; set; }
 
-        [Display(Name = "Fecha de Nacimiento")]
-        public DateTime BirthDay { get; set; }
-        
-        [Display(Name = "Roles")]
+        [Display(Name = "no_account")]
+        public string NoAccount { get; set; }
+
+        [Display(Name = "avatar_url")]
+        public string AvatarUrl { get; set; }
+
+        [Display(Name = "birth_date")]
+        public DateOnly BirthDay { get; set; }
+
+        [Display(Name = "id_campus")]
+        public string CampusId { get; set; }
+
         public List<string> Roles { get; set; }
 
         [Display(Name = "Contraseña")]

@@ -572,6 +572,14 @@ namespace MiCampus.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AvatarUrl")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("avatar_url");
+
+                    b.Property<DateOnly>("BirthDay")
+                        .HasColumnType("date")
+                        .HasColumnName("birth_date");
+
                     b.Property<string>("CampusId")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id_campus");
@@ -601,8 +609,8 @@ namespace MiCampus.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("NoAccount")
-                        .HasColumnType("int")
+                    b.Property<string>("NoAccount")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("no_account");
 
                     b.Property<string>("NormalizedEmail")

@@ -13,7 +13,13 @@ namespace MiCampus.Database.Entities
         public string LastName { get; set; }
 
         [Column("no_account")]
-        public int NoAccount { get; set; }
+        public string NoAccount { get; set; }
+
+        [Column("avatar_url")]
+        public string AvatarUrl { get; set; }
+
+        [Column("birth_date")]
+        public DateOnly BirthDay { get; set; }
 
         [Column("id_campus")]
         public string CampusId { get; set; }

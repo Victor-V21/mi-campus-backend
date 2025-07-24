@@ -1,4 +1,4 @@
-﻿using MiCampus.Dtos.Campuses;
+using MiCampus.Dtos.Campuses;
 using MiCampus.Dtos.Common;
 using MiCampus.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace MiCampus.Controllers
 {
 
-    [Route("api/campuses")]
-    [ApiController]
+    // [Route("api/campuses")]
+    // [ApiController]
     public class CampusesController : ControllerBase
     {
         //private readonly ICampusesServices _campusesServices;

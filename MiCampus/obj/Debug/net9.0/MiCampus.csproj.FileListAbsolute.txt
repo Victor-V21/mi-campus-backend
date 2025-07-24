@@ -701,3 +701,5 @@ C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/st
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.pdb
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.genruntimeconfig.cache
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/ref/MiCampus.dll
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Mapster.dll
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Mapster.Core.dll

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Mapster;
 using MiCampus.Constants;
 using MiCampus.Database;
 using MiCampus.Database.Entities;
@@ -14,20 +15,26 @@ namespace MiCampus.Services
     {
         private readonly UserManager<UserEntity> _userManager;
         private readonly RoleManager<RoleEntity> _roleManager;
-
         private readonly CampusDbContext _context;
         private readonly IMapper _mapper;
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
-        public UsersServices(CampusDbContext context, IMapper mapper, int pageSize = 10, int pageSizeLimit = 100)
+        public UsersServices(
+            UserManager<UserEntity> userManager,
+            RoleManager<RoleEntity> roleManager,
+            IMapper mapper,
+            CampusDbContext context,
+            IConfiguration configuration
+            )
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
-            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
-            PAGE_SIZE = pageSize;
-            PAGE_SIZE_LIMIT = pageSizeLimit;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _mapper = mapper;
+            _context = context;
+            PAGE_SIZE = configuration.GetValue<int>("PageSize");
+            PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
         }
-
 
         public async Task<ResponseDto<PaginationDto<List<UserDto>>>>
            GetListAsync(string seachTerm = "", int page = 1, int pageSize = 0)
@@ -93,7 +100,7 @@ namespace MiCampus.Services
                 StatusCode = HttpStatusCode.OK,
                 Status = true,
                 Message = "Registro encontrado",
-                Data = _mapper.Map<UserDto>(user)
+                Data = user.Adapt<UserDto>()
             };
         }
 
@@ -121,7 +128,7 @@ namespace MiCampus.Services
 
             try
             {
-                var user = _mapper.Map<UserEntity>(dto);
+                var user = dto.Adapt<UserEntity>();
 
                 var createResult = await _userManager.CreateAsync(user, dto.Password);
 
@@ -159,6 +166,7 @@ namespace MiCampus.Services
                 }
 
                 // Confirmar transacción
+                var responseDto = user.Adapt<UserActionResponseDto>();
                 await transaction.CommitAsync();
 
                 return new ResponseDto<UserActionResponseDto>
@@ -166,12 +174,11 @@ namespace MiCampus.Services
                     StatusCode = HttpStatusCode.OK,
                     Status = true,
                     Message = "Registro creado correctamente",
-                    Data = _mapper.Map<UserActionResponseDto>(user)
+                    Data = responseDto
                 };
             }
             catch (Exception)
             {
-
                 await transaction.RollbackAsync();
 
                 return new ResponseDto<UserActionResponseDto>
@@ -291,7 +298,6 @@ namespace MiCampus.Services
                     Message = "Registro editado correctamente",
                     Data = _mapper.Map<UserActionResponseDto>(user)
                 };
-
             }
             catch (Exception)
             {

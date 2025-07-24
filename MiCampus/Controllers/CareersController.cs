@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MiCampus.Controllers
 {
-    [Route("api/careers")]
-    [ApiController]
+    // [Route("api/careers")]
+    // [ApiController]
     public class CareersController : ControllerBase
     {
         //private readonly ICareersServices _careersServices;

@@ -12,20 +12,23 @@ var builder = WebApplication.CreateBuilder(args);
 // db
 
 // Conexión a la base de datos WINDOWS
-builder.Services.AddDbContext<CampusDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// builder.Services.AddDbContext<CampusDbContext>(options =>
+// options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
-/*
+
 builder.Services.AddDbContext<CampusDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
-*/
+
 
 builder.Services.AddIdentity<UserEntity, RoleEntity>()
     .AddEntityFrameworkStores<CampusDbContext>();
 
+// usamos Mapster para mapear los objetos
+MapsterConfig.RegisterMappings();
 
+// no va tener soporte dentro de poco
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 // INFERFACES SERVICES
@@ -35,7 +38,6 @@ builder.Services.AddTransient<IRolesService, RolesService>();
 //builder.Services.AddTransient<ICareersServices, CareersServices>();
 
 builder.Services.AddControllers();
-
 
 builder.Services.AddOpenApi();
 
