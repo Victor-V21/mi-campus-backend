@@ -44,6 +44,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2")
                         .HasColumnName("updated_date");
@@ -78,6 +82,10 @@ namespace MiCampus.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)")
@@ -122,6 +130,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("grade");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("name");
@@ -156,6 +168,10 @@ namespace MiCampus.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<string>("SubjectId")
                         .HasColumnType("nvarchar(450)")
@@ -203,6 +219,10 @@ namespace MiCampus.Migrations
                     b.Property<string>("EmisorId")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id_emisor");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<bool>("Received")
                         .HasColumnType("bit")
@@ -259,6 +279,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("date_modify");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<bool>("Seen")
                         .HasColumnType("bit")
                         .HasColumnName("seen");
@@ -310,6 +334,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("name");
@@ -348,6 +376,10 @@ namespace MiCampus.Migrations
                     b.Property<DateTime>("DateModify")
                         .HasColumnType("datetime2")
                         .HasColumnName("date_modify");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<string>("Text")
                         .HasColumnType("nvarchar(max)")
@@ -395,6 +427,10 @@ namespace MiCampus.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)")
@@ -467,6 +503,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("name");
@@ -502,6 +542,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
 
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
                     b.Property<string>("Movement")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("movement");
@@ -532,6 +576,10 @@ namespace MiCampus.Migrations
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("created_by");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
 
                     b.Property<string>("MovementId")
                         .HasColumnType("nvarchar(450)")
@@ -576,8 +624,8 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("avatar_url");
 
-                    b.Property<DateOnly>("BirthDay")
-                        .HasColumnType("date")
+                    b.Property<DateTime>("BirthDay")
+                        .HasColumnType("datetime2")
                         .HasColumnName("birth_date");
 
                     b.Property<string>("CampusId")

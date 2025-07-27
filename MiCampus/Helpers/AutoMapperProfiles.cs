@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using MiCampus.Database.Entities;
-using MiCampus.Dtos.Campuses;
 using MiCampus.Dtos.Security.Roles;
 using MiCampus.Dtos.Security.Users;
 

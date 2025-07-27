@@ -25,12 +25,12 @@ namespace MiCampus.Dtos.Security.Users
         public string AvatarUrl { get; set; }
 
         [Display(Name = "birth_date")]
-        public DateOnly BirthDay { get; set; }
+        public DateTime BirthDay { get; set; }
 
         [Display(Name = "id_campus")]
         public string CampusId { get; set; }
 
-        public List<string> Roles { get; set; }
+        public List<string> Roles { get; set; } = new();
 
         [Display(Name = "Contraseña")]
         [Required(ErrorMessage = "La {0} es requerida")]

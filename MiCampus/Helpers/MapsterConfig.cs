@@ -1,6 +1,7 @@
 
 using Mapster;
 using MiCampus.Database.Entities;
+using MiCampus.Dtos.Campuses;
 using MiCampus.Dtos.Security.Roles;
 using MiCampus.Dtos.Security.Users;
 
@@ -27,6 +28,10 @@ namespace MiCampus.Helpers
             TypeAdapterConfig<RoleEditDto, RoleEntity>.NewConfig();
 
             //campus
+
+            TypeAdapterConfig<CampusEntity, CampusCreateDto>.NewConfig();
+            TypeAdapterConfig<CampusCreateDto, CampusEntity>.NewConfig();
+
         }
     }
 }

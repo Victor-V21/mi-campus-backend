@@ -7,7 +7,10 @@ namespace Micampus.Database.Entities.Common
     {
         [Key]
         [Column("id")]
-        public string Id { get; set; }
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+
+        [Column("is_enabled")]
+        public bool IsEnabled { get; set; } = true;
 
         [Column("created_by")]
         public string CreatedBy { get; set; }

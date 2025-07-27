@@ -19,7 +19,7 @@ namespace MiCampus.Database.Entities
         public string AvatarUrl { get; set; }
 
         [Column("birth_date")]
-        public DateOnly BirthDay { get; set; }
+        public DateTime BirthDay { get; set; }
 
         [Column("id_campus")]
         public string CampusId { get; set; }

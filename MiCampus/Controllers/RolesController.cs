@@ -68,7 +68,7 @@ namespace MiCampus.Controllers
 
         [HttpPut("{id}")]
         public async Task<ActionResult<ResponseDto<RoleActionResponseDto>>> Edit(
-            [FromBody] RoleEditDto dto, [FromQuery] string id)
+            [FromBody] RoleEditDto dto, string id)
         {
 
             var response = await _rolesService.EditAsync(dto, id);
@@ -81,6 +81,7 @@ namespace MiCampus.Controllers
                 });
 
         }
+
         //Eliminar
         [HttpDelete("{id}")]
         public async Task<ActionResult<ResponseDto<RoleActionResponseDto>>> Delete(string id)

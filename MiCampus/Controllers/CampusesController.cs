@@ -5,80 +5,82 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MiCampus.Controllers
 {
-
-    // [Route("api/campuses")]
-    // [ApiController]
+    [ApiController]
+    [Route("api/campuses")]
     public class CampusesController : ControllerBase
     {
-        //private readonly ICampusesServices _campusesServices;
-        //public CampusesController(ICampusesServices services)
-        //{
-        //    services = _campusesServices;
-        //}
+        private readonly ICampusesServices _campusesServices;
+        public CampusesController(
+            ICampusesServices campusesServices
+        )
+        {
+            _campusesServices = campusesServices;
+        }
 
-        //[HttpGet]
-        //public async Task<ActionResult<ResponseDto<PaginationDto<List<CampusesDto>>>>> GetListAsync(
-        //    [FromQuery] string searchTerm = "", [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
-        //{
-        //    var response = await _campusesServices.GetListAsync(searchTerm, page, pageSize);
-        //    return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<CampusesDto>>>
-        //    {
-        //        Status = response.Status,
-        //        Message = response.Message,
-        //        Data = response.Data
-        //    });
-        //}
+        [HttpGet]
 
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<ResponseDto<CampusesDto>>> GetOneByIdAsync(string id)
-        //{
-        //    var response = await _campusesServices.GetOneByIdAsync(id);
-        //    return StatusCode(response.StatusCode, new ResponseDto<CampusesDto>
-        //    {
-        //        Status = response.Status,
-        //        Message = response.Message,
-        //        Data = response.Data
-        //    });
-        //}
+        public async Task<ActionResult<ResponseDto<PaginationDto<List<CampusActionResponseDto>>>>>
+            EnabledList(string searchTerm = "", int page = 1, int pageSize = 10)
+        {
+            var response = await _campusesServices.GetEnabledListAsync(searchTerm, page, pageSize);
 
-        //[HttpPost]
+            return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<CampusActionResponseDto>>>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
 
-        //public async Task<ActionResult<ResponseDto<CampusesDto>>> CreateAsync(CampusesCreateDto campus)
-        //{
-        //    var response = await _campusesServices.CreateAsync(campus);
-        //    return StatusCode(response.StatusCode, new ResponseDto<CampusesDto>
-        //    {
-        //        Status = response.Status,
-        //        Message = response.Message,
-        //        Data = response.Data
-        //    });
-        //}
+        [HttpGet]
+        [Route("admin")]
+        public async Task<ActionResult<ResponseDto<PaginationDto<List<CampusDto>>>>>
+            ListAll(string searchTerm = "", string isEnabled = "", int page = 1, int pageSize = 10)
+        {
+            var response = await _campusesServices.GetListAllAsync(searchTerm, isEnabled, page, pageSize);
 
-        //[HttpPut("{id}")]
-        //public async Task<ActionResult<ResponseDto<CampusesDto>>> EditAsync(
-        //    [FromBody] CampusesEditDto campus,
-        //    string id)
-        //{
-        //    var response = await _campusesServices.EditAsync(campus, id);
-        //    return StatusCode(response.StatusCode, new ResponseDto<CampusesDto>
-        //    {
-        //        Status = response.Status,
-        //        Message = response.Message,
-        //        Data = response.Data
-        //    });
-        //}
+            return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<CampusDto>>>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
 
-        //[HttpDelete("{id}")]
-        //public async Task<ActionResult<ResponseDto<CampusesDto>>> DeleteAsync(string id)
-        //{
-        //    var response = await _campusesServices.DeleteAsync(id);
-        //    return StatusCode(response.StatusCode, new ResponseDto<CampusesDto>
-        //    {
-        //        Status = response.Status,
-        //        Message = response.Message,
-        //        Data = response.Data
-        //    });
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ResponseDto<CampusDto>>> GetOneById(string id)
+        {
+            var response = await _campusesServices.GetOneByIdAsync(id);
+            return StatusCode(response.StatusCode, new ResponseDto<CampusDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
 
-        //}
+        [HttpPost]
+        public async Task<ActionResult<ResponseDto<CampusDto>>> CrateeAsync(CampusCreateDto dto)
+        {
+            var response = await _campusesServices.CreateAsync(dto);
+            return StatusCode(response.StatusCode, new ResponseDto<CampusDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ResponseDto<CampusDto>>> EditAsync(string id, CampusEditDto dto)
+        {
+            var response = await _campusesServices.EditAsync(id, dto);
+            return StatusCode(response.StatusCode, new ResponseDto<CampusDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
     }
 }

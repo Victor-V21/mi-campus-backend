@@ -29,61 +29,61 @@ namespace MiCampus.Controllers
             });
         }
 
-        // [HttpGet]
-        // public async Task<ActionResult<ResponseDto<PaginationDto<List<UserDto>>>>> GetPaginationList
-        //     (string searchTerm = "", int page = 1, int pageSize = 10)
-        // {
-        //     var response = await _usersService.GetListAsync(searchTerm, page, pageSize);
+        [HttpGet]
+        public async Task<ActionResult<ResponseDto<PaginationDto<List<UserDto>>>>> GetPaginationList
+            (string searchTerm = "", int page = 1, int pageSize = 10)
+        {
+            var response = await _usersService.GetListAsync(searchTerm, page, pageSize);
 
-        //     return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<UserDto>>>
-        //     {
-        //         StatusCode = response.StatusCode,
-        //         Status = response.Status,
-        //         Message = response.Message,
-        //         Data = response.Data,
-        //     });
-        // }
+            return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<UserDto>>>
+            {
+                StatusCode = response.StatusCode,
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data,
+            });
+        }
 
-        // [HttpGet("{id}")]
-        // public async Task<ActionResult<ResponseDto<UserDto>>> GetOne(string id)
-        // {
-        //     var response = await _usersService.GetOneByIdAsync(id);
+        [HttpGet("{id}")]
+        public async Task<ActionResult<ResponseDto<PaginationDto<UserDto>>>> GetOne(string id)
+        {
+            var response = await _usersService.GetOneByIdAsync(id);
 
-        //     return StatusCode(response.StatusCode, new ResponseDto<UserDto>
-        //     {
-        //         StatusCode = response.StatusCode,
-        //         Status = response.Status,
-        //         Message = response.Message,
-        //         Data = response.Data,
-        //     });
-        // }
+            return StatusCode(response.StatusCode, new ResponseDto<UserDto>
+            {
+                StatusCode = response.StatusCode,
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data,
+            });
+        }
 
-        // [HttpPut("{id}")]
-        // public async Task<ActionResult<ResponseDto<UserActionResponseDto>>> EditById([FromBody] UserEditDto dto, string id)
-        // {
-        //     var response = await _usersService.EditAsync(dto, id);
+        [HttpPut("{id}")]
+        public async Task<ActionResult<ResponseDto<UserActionResponseDto>>> EditById([FromBody] UserEditDto dto, string id)
+        {
+            var response = await _usersService.EditAsync(dto, id);
 
-        //     return StatusCode(response.StatusCode, new ResponseDto<UserActionResponseDto>
-        //     {
-        //         StatusCode = response.StatusCode,
-        //         Status = response.Status,
-        //         Message = response.Message,
-        //         Data = response.Data,
-        //     });
-        // }
+            return StatusCode(response.StatusCode, new ResponseDto<UserActionResponseDto>
+            {
+                StatusCode = response.StatusCode,
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data,
+            });
+        }
 
-        // [HttpDelete("{id}")]
-        // public async Task<ActionResult<ResponseDto<UserActionResponseDto>>> DeleteById(string id)
-        // {
-        //     var response = await _usersService.DeleteAsync(id);
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ResponseDto<UserActionResponseDto>>> DeleteById(string id)
+        {
+            var response = await _usersService.DeleteAsync(id);
 
-        //     return StatusCode(response.StatusCode, new ResponseDto<UserActionResponseDto>
-        //     {
-        //         StatusCode = response.StatusCode,
-        //         Status = response.Status,
-        //         Message = response.Message,
-        //         Data = response.Data,
-        //     });
-        // }
+            return StatusCode(response.StatusCode, new ResponseDto<UserActionResponseDto>
+            {
+                StatusCode = response.StatusCode,
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data,
+            });
+        }
     }
 }

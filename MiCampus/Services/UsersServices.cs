@@ -16,21 +16,18 @@ namespace MiCampus.Services
         private readonly UserManager<UserEntity> _userManager;
         private readonly RoleManager<RoleEntity> _roleManager;
         private readonly CampusDbContext _context;
-        private readonly IMapper _mapper;
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
         public UsersServices(
             UserManager<UserEntity> userManager,
             RoleManager<RoleEntity> roleManager,
-            IMapper mapper,
             CampusDbContext context,
             IConfiguration configuration
             )
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _mapper = mapper;
             _context = context;
             PAGE_SIZE = configuration.GetValue<int>("PageSize");
             PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
@@ -60,7 +57,7 @@ namespace MiCampus.Services
                 .Take(pageSize)
                 .ToListAsync();
 
-            var usersDto = _mapper.Map<List<UserDto>>(usersEntity);
+            var usersDto = usersEntity.Adapt<List<UserDto>>();
 
             return new ResponseDto<PaginationDto<List<UserDto>>>
             {
@@ -80,7 +77,6 @@ namespace MiCampus.Services
                 }
             };
         }
-
         public async Task<ResponseDto<UserDto>> GetOneByIdAsync(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -227,7 +223,7 @@ namespace MiCampus.Services
 
             try
             {
-                _mapper.Map<UserEditDto, UserEntity>(dto, user);
+                dto.Adapt(user);
 
                 var updateResult = await _userManager.UpdateAsync(user);
 
@@ -289,6 +285,7 @@ namespace MiCampus.Services
                     }
                 }
 
+                var response = user.Adapt<UserActionResponseDto>();
                 await transacction.CommitAsync();
 
                 return new ResponseDto<UserActionResponseDto>
@@ -296,7 +293,7 @@ namespace MiCampus.Services
                     StatusCode = HttpStatusCode.OK,
                     Status = true,
                     Message = "Registro editado correctamente",
-                    Data = _mapper.Map<UserActionResponseDto>(user)
+                    Data = response
                 };
             }
             catch (Exception)
@@ -333,7 +330,7 @@ namespace MiCampus.Services
 
             try
             {
-                var userResponse = _mapper.Map<UserActionResponseDto>(user);
+                var userResponse = user.Adapt<UserActionResponseDto>();
 
                 var currentRoles = await _userManager.GetRolesAsync(user);
 

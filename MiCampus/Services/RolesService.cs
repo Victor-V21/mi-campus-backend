@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Mapster;
 using MiCampus.Constants;
 using MiCampus.Database;
 using MiCampus.Database.Entities;
@@ -15,7 +16,6 @@ namespace MiCampus.Services
         private readonly RoleManager<RoleEntity> _roleManager;
         private readonly CampusDbContext _context;
         private readonly IConfiguration _configuration;
-        private readonly IMapper _mapper;
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
 
@@ -29,7 +29,6 @@ namespace MiCampus.Services
             _roleManager = roleManager;
             _context = context;
             _configuration = configuration;
-            _mapper = mapper;
             PAGE_SIZE = _configuration.GetValue<int>("PageSize");
             PAGE_SIZE_LIMIT = _configuration.GetValue<int>("PageSizeLimit");
 
@@ -61,7 +60,7 @@ namespace MiCampus.Services
                 .Take(pageSize)
                 .ToListAsync();
 
-            var rolesDto = _mapper.Map<List<RoleDto>>(roles);
+            var rolesDto = roles.Adapt<List<RoleDto>>(); //_mapper.Map<List<RoleDto>>(roles);
 
             return new ResponseDto<PaginationDto<List<RoleDto>>>
             {
@@ -85,7 +84,7 @@ namespace MiCampus.Services
         //Creacion un rol
         public async Task<ResponseDto<RoleActionResponseDto>> CreateAsync(RoleCreateDto dto)
         {
-            var role = _mapper.Map<RoleEntity>(dto);
+            var role = dto.Adapt<RoleEntity>(); //_mapper.Map<RoleEntity>(dto);
 
             var result = await _roleManager.CreateAsync(role);
 
@@ -99,16 +98,17 @@ namespace MiCampus.Services
                 };
             }
 
+            var response = role.Adapt<RoleActionResponseDto>(); //_mapper.Map<RoleActionResponseDto>(role);
             return new ResponseDto<RoleActionResponseDto>
             {
                 StatusCode = HttpStatusCode.CREATED,
                 Status = true,
                 Message = "Registro creado correctamente",
-                Data = _mapper.Map<RoleActionResponseDto>(role)
+                Data = response
             };
         }
 
-        //Busqueda por un id
+        // Busqueda por un id
         public async Task<ResponseDto<RoleDto>> GetOneById(string id)
         {
 
@@ -124,12 +124,13 @@ namespace MiCampus.Services
                 };
             }
 
+            var response = role.Adapt<RoleDto>(); //_mapper.Map<RoleDto>(role);
             return new ResponseDto<RoleDto>()
             {
                 StatusCode = HttpStatusCode.OK,
                 Status = true,
                 Message = "Registro encontrado correctamente",
-                Data = _mapper.Map<RoleDto>(role)
+                Data = response
             };
         }
 
@@ -150,7 +151,7 @@ namespace MiCampus.Services
                 };
             }
 
-            _mapper.Map<RoleEditDto, RoleEntity>(dto, role);
+            dto.Adapt(role); //_mapper.Map(dto, role);
 
             var result = await _roleManager.UpdateAsync(role);
 
@@ -164,12 +165,14 @@ namespace MiCampus.Services
                 };
             }
 
+            var response = role.Adapt<RoleActionResponseDto>(); //_mapper.Map<RoleActionResponseDto>(role);
+
             return new ResponseDto<RoleActionResponseDto>
             {
                 StatusCode = HttpStatusCode.OK,
                 Status = true,
                 Message = "Registro editado correctamente",
-                Data = _mapper.Map<RoleActionResponseDto>(role)
+                Data = response
             };
         }
 
@@ -199,15 +202,15 @@ namespace MiCampus.Services
                     Message = string.Join(", ", result.Errors.Select(e => e.Description))
                 };
             }
+            var response = role.Adapt<RoleActionResponseDto>(); //_mapper.Map<RoleActionResponseDto>(role);
 
             return new ResponseDto<RoleActionResponseDto>
             {
                 StatusCode = HttpStatusCode.OK,
                 Status = true,
                 Message = "Registro borrado correctamente",
-                Data = _mapper.Map<RoleActionResponseDto>(role)
+                Data = response
             };
-
         }
     }
 }
