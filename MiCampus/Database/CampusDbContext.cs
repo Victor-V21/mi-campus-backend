@@ -13,7 +13,7 @@ namespace MiCampus.Database
     {
         public CampusDbContext(DbContextOptions options) : base(options)
         {
-            
+
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -36,9 +36,10 @@ namespace MiCampus.Database
         public DbSet<CampusEntity> Campuses { get; set; }
         public DbSet<CampusCareerEntity> CampusCareers { get; set; }
         public DbSet<CareerEntity> Careers { get; set; }
+        public DbSet<GradeEntity> CareerGrades { get; set; }
         public DbSet<CareerSubjectEntity> CareerSubjects { get; set; }
         public DbSet<ChatEntity> Chats { get; set; }
-        public DbSet<NotificationEntity> Notifications{ get; set; }
+        public DbSet<NotificationEntity> Notifications { get; set; }
         public DbSet<NotificationTypeEntity> NotificationsTypes { get; set; }
         public DbSet<PublicationEntity> Publications { get; set; }
         public DbSet<PublicationTypeEntity> PublicationsTypes { get; set; }
@@ -47,4 +48,4 @@ namespace MiCampus.Database
         public DbSet<SubjectUserEntity> SubjectsUsers { get; set; }
         public DbSet<NotificationTypeEntity> NotificationTypes { get; set; }
     }
-}   
+}

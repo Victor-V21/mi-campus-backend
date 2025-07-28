@@ -36,6 +36,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
 builder.Services.AddTransient<ICampusesServices, CampusesServices>();
+builder.Services.AddTransient<IGradesServices, GradesServices>();
 //builder.Services.AddTransient<ICareersServices, CareersServices>();
 
 builder.Services.AddControllers();
