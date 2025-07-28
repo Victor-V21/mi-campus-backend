@@ -126,9 +126,9 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("description");
 
-                    b.Property<string>("Grade")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("grade");
+                    b.Property<string>("IdGrade")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_grade");
 
                     b.Property<bool>("IsEnabled")
                         .HasColumnType("bit")
@@ -147,6 +147,8 @@ namespace MiCampus.Migrations
                         .HasColumnName("updated_by");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdGrade");
 
                     b.ToTable("careers");
                 });
@@ -863,6 +865,15 @@ namespace MiCampus.Migrations
                     b.Navigation("Campus");
 
                     b.Navigation("Career");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.GradeEntity", "AcademicGrade")
+                        .WithMany()
+                        .HasForeignKey("IdGrade");
+
+                    b.Navigation("AcademicGrade");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>

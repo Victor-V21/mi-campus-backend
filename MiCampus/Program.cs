@@ -19,7 +19,6 @@ builder.Services.AddHttpContextAccessor();
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
-
 builder.Services.AddDbContext<CampusDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
 
@@ -37,7 +36,8 @@ builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
 builder.Services.AddTransient<ICampusesServices, CampusesServices>();
 builder.Services.AddTransient<IGradesServices, GradesServices>();
-//builder.Services.AddTransient<ICareersServices, CareersServices>();
+builder.Services.AddTransient<ICareersServices, CareersServices>();
+builder.Services.AddTransient<ISubjectsServices, SubjectsServices>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -54,7 +54,7 @@ if (app.Environment.IsDevelopment())
 
     //swagger
     app.UseSwagger();
-    app.UseSwaggerUI(); // Esto te da la interfaz bonita
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
