@@ -1,8 +1,11 @@
 using MiCampus.Database;
 using MiCampus.Database.Entities;
+using MiCampus.Extensions;
+using MiCampus.Filters;
 using MiCampus.Helpers;
 using MiCampus.Services;
 using MiCampus.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
@@ -14,17 +17,18 @@ builder.Services.AddHttpContextAccessor();
 // db
 
 // Conexión a la base de datos WINDOWS
-// builder.Services.AddDbContext<CampusDbContext>(options =>
-// options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<CampusDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
 
-builder.Services.AddDbContext<CampusDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
+//builder.Services.AddDbContext<CampusDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
 
-builder.Services.AddIdentity<UserEntity, RoleEntity>()
-    .AddEntityFrameworkStores<CampusDbContext>();
+//Comente para revisar el auth
+//builder.Services.AddIdentity<UserEntity, RoleEntity>()
+//    .AddEntityFrameworkStores<CampusDbContext>();
 
 // usamos Mapster para mapear los objetos
 MapsterConfig.RegisterMappings();
@@ -36,9 +40,24 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
 builder.Services.AddTransient<ICampusesServices, CampusesServices>();
+builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuditService, AuditService>();
 //builder.Services.AddTransient<ICareersServices, CareersServices>();
 
-builder.Services.AddControllers();
+
+builder.Services.AddCorsConfiguration(builder.Configuration);
+builder.Services.AddAuthenticationConfig(builder.Configuration);
+
+builder.Services.AddControllers( options =>
+{
+    options.Filters.Add(typeof(ValidateModelStateAttribute));
+});
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -57,6 +76,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//Agreacion de los cors
+app.UseCors("CorsPolicy");
 
 app.UseAuthentication();
 app.UseAuthorization();
