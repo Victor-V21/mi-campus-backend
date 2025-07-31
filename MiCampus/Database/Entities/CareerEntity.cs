@@ -18,5 +18,8 @@ namespace MiCampus.Database.Entities
 
         [ForeignKey("IdGrade")]
         public GradeEntity AcademicGrade { get; set; }
+
+        // 🔹 Relación uno a muchos: Una carrera puede tener muchas materias
+        public ICollection<CareerSubjectEntity> CareerSubjects { get; set; }
     }
 }

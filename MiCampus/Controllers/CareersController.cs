@@ -31,12 +31,12 @@ namespace MiCampus.Controllers
 
         // SOLO PARA ADMINISTRADORES
         [HttpGet("admin")]
-        public async Task<ActionResult<ResponseDto<PaginationDto<List<CareerDto>>>>> GetList
+        public async Task<ActionResult<ResponseDto<PaginationDto<List<CareerActionResponseDto>>>>> GetList
         (string searchTerm, string isEnabled, int page, int pageSize)
         {
             var response = await _careersServices.GetListAsync(searchTerm, isEnabled, page, pageSize);
 
-            return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<CareerDto>>>
+            return StatusCode(response.StatusCode, new ResponseDto<PaginationDto<List<CareerActionResponseDto>>>
             {
                 Status = response.Status,
                 Message = response.Message,
@@ -55,6 +55,14 @@ namespace MiCampus.Controllers
                 Message = response.Message,
                 Data = response.Data
             });
+        }
+
+        [HttpGet("admin/{id}")]
+        public async Task<ActionResult<ResponseDto<CareerDto>>> GetAllById(string id)
+        {
+            var response = await _careersServices.GetAllByIdAsync(id);
+
+            return StatusCode(response.StatusCode, response);
         }
 
         [HttpPost]

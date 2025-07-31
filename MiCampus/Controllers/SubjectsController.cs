@@ -26,7 +26,7 @@ namespace MiCampus.Controllers
 
         // Obtener lista de materias (admin)
         [HttpGet]
-        [Route("api/admin/subjects")]
+        [Route("admin")]
         public async Task<ActionResult<ResponseDto<PaginationDto<List<SubjectActionResponseDto>>>>> GetAllAsync(
             string searchTerm = "", string isEnabled = "", int page = 1, int pageSize = 0)
         {

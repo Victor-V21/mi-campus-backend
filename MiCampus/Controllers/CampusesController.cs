@@ -82,5 +82,47 @@ namespace MiCampus.Controllers
                 Data = response.Data
             });
         }
+
+        // ENDPOINTS EXTRAS CON CONECCIONES A OTRAS TABLAS
+        [HttpPost("careers")]
+        public async Task<ActionResult<ResponseDto<CampusDto>>> AddCareerAsync(string campusId, string careerId)
+        {
+            var response = await _campusesServices.AddCareerAsync(campusId, careerId);
+
+            return StatusCode(response.StatusCode, new ResponseDto<CampusDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
+
+        [HttpGet("{campusId}/careers/{careerId}")]
+        public async Task<ActionResult<ResponseDto<CampuseCareerDto>>> GetCareersByCampus(string campusId, string careerId)
+        {
+            var response = await _campusesServices.GetCareersByCampusAsync(campusId, careerId);
+
+            return StatusCode(response.StatusCode, new ResponseDto<CampuseCareerDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
+
+        [HttpDelete("{campusId}/careers/{careerId}")]
+        public async Task<ActionResult<ResponseDto<CampuseCareerDto>>> RemoveCareer(string campusId, string careerId)
+        {
+            var response = await _campusesServices.RemoveCareerAsync(campusId, careerId);
+
+            return StatusCode(response.StatusCode, new ResponseDto<CampuseCareerDto>
+            {
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data
+            });
+        }
+
+
     }
 }

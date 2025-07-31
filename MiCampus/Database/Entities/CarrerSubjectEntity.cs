@@ -18,6 +18,9 @@ namespace MiCampus.Database.Entities
 
         [ForeignKey("SubjectId")]
         public SubjectEntity Subject { get; set; }
+
+        // Relación con los requisitos
+        public ICollection<CareerSubjectRequisiteEntity> Requisites { get; set; }
     }
 }
 

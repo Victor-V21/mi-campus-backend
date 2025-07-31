@@ -11,7 +11,6 @@ namespace MiCampus.Services
 {
     public class SubjectsServices : ISubjectsServices
     {
-
         private readonly CampusDbContext _context;
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
@@ -200,7 +199,5 @@ namespace MiCampus.Services
                 Data = updatedSubjectDto
             };
         }
-
-
     }
 }

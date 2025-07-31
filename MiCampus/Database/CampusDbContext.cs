@@ -47,5 +47,6 @@ namespace MiCampus.Database
         public DbSet<SubjectMovementEntity> SubjectMovements { get; set; }
         public DbSet<SubjectUserEntity> SubjectsUsers { get; set; }
         public DbSet<NotificationTypeEntity> NotificationTypes { get; set; }
+        public DbSet<CareerSubjectRequisiteEntity> CareerSubjectsRequisites { get; set; }
     }
 }

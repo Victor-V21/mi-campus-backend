@@ -525,6 +525,14 @@ C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/Mi
 C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.genruntimeconfig.cache
 C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/ref/MiCampus.dll
 C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/staticwebassets.upToDateCheck.txt
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.csproj.AssemblyReference.cache
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.GeneratedMSBuildEditorConfig.editorconfig
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.AssemblyInfoInputs.cache
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.AssemblyInfo.cs
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.csproj.CoreCompileInputs.cache
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.MvcApplicationPartsAssemblyInfo.cs
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.MvcApplicationPartsAssemblyInfo.cache
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.sourcelink.json
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/appsettings.Development.json
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/appsettings.json
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/MiCampus.staticwebassets.endpoints.json
@@ -587,6 +595,9 @@ C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/st
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Mono.TextTemplating.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Newtonsoft.Json.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Scalar.AspNetCore.dll
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/System.ClientModel.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/System.CodeDom.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/System.Composition.AttributedModel.dll
@@ -679,14 +690,6 @@ C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/st
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.csproj.AssemblyReference.cache
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.GeneratedMSBuildEditorConfig.editorconfig
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.AssemblyInfoInputs.cache
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.AssemblyInfo.cs
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.csproj.CoreCompileInputs.cache
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.MvcApplicationPartsAssemblyInfo.cs
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.MvcApplicationPartsAssemblyInfo.cache
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.sourcelink.json
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/scopedcss/bundle/MiCampus.styles.css
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/staticwebassets.build.json
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/staticwebassets.development.json
@@ -703,6 +706,3 @@ C:/Users/Victor/projects/Proyecto/mi-campus-backend/MiCampus/obj/Debug/net9.0/st
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.pdb
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/MiCampus.genruntimeconfig.cache
 /home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/Debug/net9.0/ref/MiCampus.dll
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll

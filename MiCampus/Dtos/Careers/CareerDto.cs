@@ -7,5 +7,6 @@ namespace MiCampus.Dtos.Careers
         // referencia a la tabla de grados academicos
         public string IdGrade { get; set; }
         public string Description { get; set; }
+        public List<AddSubjectDto> Subjects { get; set; }
     }
 }

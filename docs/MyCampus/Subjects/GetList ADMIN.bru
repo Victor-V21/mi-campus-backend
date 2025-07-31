@@ -1,0 +1,18 @@
+meta {
+  name: GetList ADMIN
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PATH}}/subjects/admin?isEnabled
+  body: none
+  auth: inherit
+}
+
+params:query {
+  isEnabled: 
+  ~searchTerm: 
+  ~page: 
+  ~pageSize: 
+}

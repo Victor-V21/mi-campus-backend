@@ -4,6 +4,7 @@ using MiCampus.Constants;
 using MiCampus.Database;
 using MiCampus.Database.Entities;
 using MiCampus.Dtos.Campuses;
+using MiCampus.Dtos.Careers;
 using MiCampus.Dtos.Common;
 using MiCampus.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -219,10 +220,119 @@ namespace MiCampus.Services
             };
         }
 
+        // Agregar carreras al campus
+        public async Task<ResponseDto<CampusDto>> AddCareerAsync(string campusId, string careerId)
+        {
+            var campusEntity = await _context.Campuses.FirstOrDefaultAsync(x => x.Id == campusId);
+            var careerEntity = await _context.Careers.FirstOrDefaultAsync(x => x.Id == careerId);
+
+            if (campusEntity is null || careerEntity is null)
+            {
+                return new ResponseDto<CampusDto>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "Campus no encontrado"
+                };
+            }
+
+            var invalidCareer = await _context.CampusCareers
+                .AnyAsync(c => c.CampusId == campusId && c.CareerId == careerId);
+
+            if (invalidCareer)
+            {
+                return new ResponseDto<CampusDto>
+                {
+                    StatusCode = HttpStatusCode.BAD_REQUEST,
+                    Status = false,
+                    Message = "La carrera ya está asociada a este campus"
+                };
+            }
+
+            var campusCareerEntity = new CampusCareerEntity
+            {
+                CampusId = campusId,
+                CareerId = careerId
+            };
+
+            _context.CampusCareers.Add(campusCareerEntity);
+            await _context.SaveChangesAsync();
+
+            return new ResponseDto<CampusDto>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = "Carrera asociada correctamente"
+            };
+        }
+
+        // Ver las carreras asociadas al campus
+
         /*
         
-            FALTA HACER ENDPOINT DE LISTAR LAS CARRERAS DE CADA CAMPUS
-        
+            FALTAN LISTAR LAS CARRERAS POR CAMPUS
+            
         */
+        public async Task<ResponseDto<CampuseCareerDto>> GetCareersByCampusAsync(string campusId, string careerId)
+        {
+            var campusCareerEntity = await _context.CampusCareers
+                .Where(x => x.CampusId == campusId && x.CareerId == careerId)
+                .Include(c => c.Career)
+                .ToListAsync();
+
+            if (campusCareerEntity is null)
+            {
+                return new ResponseDto<CampuseCareerDto>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "Campus no encontrado"
+                };
+            }
+
+            var responseDto = campusCareerEntity.Adapt<CampuseCareerDto>();
+
+            return new ResponseDto<CampuseCareerDto>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = "Mensajes encontrados correctamente",
+                Data = responseDto
+            };
+        }
+
+        public async Task<ResponseDto<CampuseCareerDto>> RemoveCareerAsync(string campusId, string careerId)
+        {
+            var campusCareerEntity = await _context.CampusCareers
+                .FirstOrDefaultAsync(c => c.CampusId == campusId && c.CareerId == careerId);
+
+            var careerEntity = await _context.Careers.FirstOrDefaultAsync(x => x.Id == careerId);
+
+            if (campusCareerEntity is null)
+            {
+                return new ResponseDto<CampuseCareerDto>
+                {
+                    StatusCode = HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "La carrera no está asociada a este campus"
+                };
+            }
+
+            _context.CampusCareers.Remove(campusCareerEntity);
+            await _context.SaveChangesAsync();
+
+            var responseDto = campusCareerEntity.Adapt<CampuseCareerDto>();
+
+            responseDto.Careers = [careerEntity.Adapt<CareerActionResponseDto>()];
+
+            return new ResponseDto<CampuseCareerDto>
+            {
+                StatusCode = HttpStatusCode.OK,
+                Status = true,
+                Message = "Carrera desasociada correctamente",
+                Data = responseDto
+            };
+        }
+
     }
 }

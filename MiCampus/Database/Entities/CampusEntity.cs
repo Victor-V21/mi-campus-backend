@@ -14,5 +14,6 @@ namespace MiCampus.Database.Entities
 
         [Column("description")]
         public string Description { get; set; }
+
     }
 }

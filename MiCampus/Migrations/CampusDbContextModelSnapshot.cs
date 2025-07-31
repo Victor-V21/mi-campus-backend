@@ -196,6 +196,49 @@ namespace MiCampus.Migrations
                     b.ToTable("careers_subjects");
                 });
 
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectRequisiteEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<string>("CareerSubjectId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_career_subject");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
+                    b.Property<string>("RequisiteSubjectId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_requisite_subject");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CareerSubjectId");
+
+                    b.HasIndex("RequisiteSubjectId");
+
+                    b.ToTable("careers_subjects_requisites");
+                });
+
             modelBuilder.Entity("MiCampus.Database.Entities.ChatEntity", b =>
                 {
                     b.Property<string>("Id")
@@ -891,6 +934,21 @@ namespace MiCampus.Migrations
                     b.Navigation("Subject");
                 });
 
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectRequisiteEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.CareerSubjectEntity", "CareerSubject")
+                        .WithMany("Requisites")
+                        .HasForeignKey("CareerSubjectId");
+
+                    b.HasOne("MiCampus.Database.Entities.SubjectEntity", "RequisiteSubject")
+                        .WithMany()
+                        .HasForeignKey("RequisiteSubjectId");
+
+                    b.Navigation("CareerSubject");
+
+                    b.Navigation("RequisiteSubject");
+                });
+
             modelBuilder.Entity("MiCampus.Database.Entities.ChatEntity", b =>
                 {
                     b.HasOne("MiCampus.Database.Entities.UserEntity", "Emisor")
@@ -1015,6 +1073,11 @@ namespace MiCampus.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>
+                {
+                    b.Navigation("Requisites");
                 });
 #pragma warning restore 612, 618
         }
