@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\extensions\\authenticationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\extensions\\authenticationextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\services\\interfaces\\istatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\istatisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,86 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthenticationExtension.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Extensions\\AuthenticationExtension.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Extensions\\AuthenticationExtension.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Extensions\\AuthenticationExtension.cs",
-              "RelativeToolTip": "MiCampus\\Extensions\\AuthenticationExtension.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:53:17.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IStatisticsService.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\IStatisticsService.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\IStatisticsService.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\IStatisticsService.cs",
-              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\IStatisticsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:46:45.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StatisticsService.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\StatisticsService.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\StatisticsService.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\StatisticsService.cs",
-              "RelativeToolTip": "MiCampus\\Services\\StatisticsService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAoAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:46:29.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Program.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Program.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Program.cs",
-              "RelativeToolTip": "MiCampus\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:34:06.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\AuthService.cs",
-              "RelativeToolTip": "MiCampus\\Services\\AuthService.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwGoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:44:31.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "MiCampus\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T19:42:11.709Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"

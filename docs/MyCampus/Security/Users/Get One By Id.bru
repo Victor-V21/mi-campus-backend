@@ -1,0 +1,21 @@
+meta {
+  name: Get One By Id
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PATH}}/users/3d373bdb-ad8a-4fc5-8169-67783dbd878b
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~searchTerm: 
+  ~page: 1
+  ~pageSize: 10
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}

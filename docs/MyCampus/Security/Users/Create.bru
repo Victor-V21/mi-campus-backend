@@ -1,0 +1,29 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/users
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "firstName": "María",
+    "lastName": "Mejía",
+    "email": "mmejia@gmail.com",
+    "birthDate": "2000-10-10",
+    "roles": [
+      "NORMAL_USER"
+    ],
+    "password": "ConTra1*",
+    "confirmPassword": "ConTra1*"
+  }
+}
