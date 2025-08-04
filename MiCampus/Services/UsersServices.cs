@@ -108,7 +108,6 @@ namespace MiCampus.Services
                 Data = user.Adapt<UserDto>()
             };
         }
-
         public async Task<ResponseDto<UserActionResponseDto>> CreateAsync(UserCreateDto dto)
         {
             if (dto.Roles != null && dto.Roles.Any())
@@ -205,7 +204,6 @@ namespace MiCampus.Services
                 };
             }
         }
-
         public async Task<ResponseDto<UserActionResponseDto>> EditAsync(
             UserEditDto dto, string id)
         {
@@ -329,7 +327,6 @@ namespace MiCampus.Services
             }
 
         }
-
         public async Task<ResponseDto<UserActionResponseDto>> DeleteAsync(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -408,7 +405,6 @@ namespace MiCampus.Services
                 };
             }
         }
-
         public async Task<ResponseDto<UserActionResponseDto>> RegisterAsync(UserCreateDto dto)
         {
             // Validar dominio de correo institucional

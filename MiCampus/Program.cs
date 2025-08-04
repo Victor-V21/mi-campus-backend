@@ -2,6 +2,7 @@ using MiCampus.Configurations;
 using MiCampus.Database;
 using MiCampus.Database.Entities;
 using MiCampus.Helpers;
+using MiCampus.Hubs;
 using MiCampus.Services;
 using MiCampus.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
@@ -28,6 +29,11 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 builder.Services.Configure<SmtpSettings>(
     builder.Configuration.GetSection("SmtpSettings"));
+
+
+// Servicios de signalR
+
+builder.Services.AddSignalR();
 
 // db
 
@@ -61,6 +67,8 @@ builder.Services.AddTransient<ICampusesServices, CampusesServices>();
 builder.Services.AddTransient<IGradesServices, GradesServices>();
 builder.Services.AddTransient<ICareersServices, CareersServices>();
 builder.Services.AddTransient<ISubjectsServices, SubjectsServices>();
+builder.Services.AddTransient<IChatsServices, ChatsServices>();
+// builder.Services.AddTransient<IGeminiServices, GeminiServices>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -79,6 +87,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.MapHub<ChatHub>("/chathub"); // Mapea el ChatHub a la URL "/chathub"
 
 app.UseHttpsRedirection();
 
@@ -93,6 +102,8 @@ app.Run();
 /*
     usuarios:
         -falta asociar los usuarios a las carreras
+        -falta asociar los usuarios a las clases que lleva o que imparte
+        
     chats:
         -faltan los chats entre usuarios
         -falta implementar chatbot*

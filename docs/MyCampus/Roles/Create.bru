@@ -1,0 +1,22 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/roles
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "NORMAL_USER",
+    "description": "normal"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
