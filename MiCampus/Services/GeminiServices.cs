@@ -12,12 +12,16 @@ namespace MiCampus.Services
     public sealed class GeminiServices : IGeminiServices
     {
         private readonly HttpClient _httpClient;
-        private readonly string apiKey = Environment.GetEnvironmentVariable("GEMINI_API_KEY");
+        private readonly string apiKey;
 
         public GeminiServices(HttpClient httpClient, IConfiguration configuration)
         {
             _httpClient = httpClient;
+            apiKey = Environment
+                .GetEnvironmentVariable("GEMINI_API_KEY") ??
+                throw new Exception("No se encontró la variable GEMINI_API_KEY en .env");
         }
+
         public async Task<ResponseDto<GeminiResponseDto>> GenerateContentAsync(GeminiRequestDto dto)
         {
             // 1. Cargar contexto base desde archivo TXT
