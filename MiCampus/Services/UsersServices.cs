@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Mail;
 using AutoMapper;
 using Mapster;
@@ -24,6 +24,7 @@ namespace MiCampus.Services
         private readonly SmtpSettings _smtpSettings;
         private readonly int PAGE_SIZE;
         private readonly int PAGE_SIZE_LIMIT;
+        private readonly string _appBaseUrl;
 
 
         public UsersServices(
@@ -31,7 +32,8 @@ namespace MiCampus.Services
             RoleManager<RoleEntity> roleManager,
             CampusDbContext context,
             IConfiguration configuration,
-            IOptions<SmtpSettings> smtpSettings
+            IOptions<SmtpSettings> smtpSettings,
+            IHttpContextAccessor httpContextAccessor
             )
         {
             _userManager = userManager;

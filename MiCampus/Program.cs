@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -60,6 +61,11 @@ MapsterConfig.RegisterMappings();
 // no va tener soporte dentro de poco
 builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
+
+//config http clients
+
+builder.Services.AddHttpClient<GeminiServices>();
+
 // INFERFACES SERVICES
 builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
@@ -68,13 +74,16 @@ builder.Services.AddTransient<IGradesServices, GradesServices>();
 builder.Services.AddTransient<ICareersServices, CareersServices>();
 builder.Services.AddTransient<ISubjectsServices, SubjectsServices>();
 builder.Services.AddTransient<IChatsServices, ChatsServices>();
-// builder.Services.AddTransient<IGeminiServices, GeminiServices>();
+builder.Services.AddScoped<IGeminiServices, GeminiServices>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddOpenApi();
+
+// Cargar el archivo .env
+DotNetEnv.Env.Load();
 
 var app = builder.Build();
 

@@ -1,121 +1,93 @@
-// using Google.Cloud.AIPlatform.V1;
-// using Google.Protobuf.WellKnownTypes;
-// using MiCampus.Constants;
-// using MiCampus.Dtos.Common;
-// using MiCampus.Dtos.Gemini;
-// using MiCampus.Services.Interfaces;
-// using System.Linq;
+using System.Net;
+using System.Text;
+using System.Text.Json;
+using MiCampus.Constants;
+using MiCampus.Dtos.Common;
+using MiCampus.Dtos.Gemini;
+using MiCampus.Helpers;
+using MiCampus.Services.Interfaces;
 
-// namespace MiCampus.Services
-// {
-//     public sealed class GeminiServices : IGeminiServices
-//     {
-//         private readonly PredictionServiceClient _predictionServiceClient;
-//         private readonly EndpointName _endpointName;
-//         private readonly ILogger<GeminiServices> _logger;
+namespace MiCampus.Services
+{
+    public sealed class GeminiServices : IGeminiServices
+    {
+        private readonly HttpClient _httpClient;
+        private readonly string apiKey = Environment.GetEnvironmentVariable("GEMINI_API_KEY");
 
-//         public GeminiServices(IConfiguration configuration, ILogger<GeminiServices> logger)
-//         {
-//             _logger = logger;
-//             string projectId = configuration["Gemini:ProjectId"];
-//             string location = configuration["Gemini:Location"];
-//             string model = "gemini-1.5-flash-001"; // Modelo rápido y eficiente
+        public GeminiServices(HttpClient httpClient, IConfiguration configuration)
+        {
+            _httpClient = httpClient;
+        }
+        public async Task<ResponseDto<GeminiResponseDto>> GenerateContentAsync(GeminiRequestDto dto)
+        {
+            // 1. Cargar contexto base desde archivo TXT
+            var contextPath = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "gemini-context.txt");
+            var contextPrompt = await File.ReadAllTextAsync(contextPath);
 
-//             if (string.IsNullOrEmpty(projectId) || string.IsNullOrEmpty(location))
-//             {
-//                 _logger.LogError("ProjectId o Location de Gemini no están configurados en appsettings.json");
-//                 throw new InvalidOperationException("La configuración de Gemini (ProjectId, Location) es inválida.");
-//             }
+            // 2. Buscar fragmentos en múltiples PDFs
+            var pdfFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "UniversityReglaments");
+            var fragmentosDeVariosPDFs = PdfHelper.BuscarFragmentosEnMultiplesPDFs(pdfFolderPath, dto.Prompt);
 
-//             _predictionServiceClient = new PredictionServiceClientBuilder
-//             {
-//                 Endpoint = $"{location}-aiplatform.googleapis.com"
-//             }.Build();
+            // 3. Construir prompt final
+            var fullPrompt = $"{contextPrompt}\n\nInformación relevante de los reglamentos:\n{fragmentosDeVariosPDFs}\n\nPregunta del estudiante:\n{dto.Prompt}";
 
-//             _endpointName = EndpointName
-//                 .FromProjectLocationPublisherModel(projectId, location, "google", model);
-//         }
+            // 4. Crear request para Gemin, basado en la documentacion de google ia studio
+            //https://aistudio.google.com/apikey
+            var requestBody = new
+            {
+                contents = new[]
+                {
+                    new {
+                        parts = new[]
+                        {
+                            new { text = fullPrompt }
+                        }
+                    }
+                }
+            };
 
-//         public async Task<ResponseDto<GeminiResponseDto>> GenerateContentAsync(GeminiRequestDto dto)
-//         {
-//             try
-//             {
-//                 var partsList = new ListValue();
-//                 partsList.Values.Add(new Value
-//                 {
-//                     StructValue = new Struct
-//                     {
-//                         Fields = { { "text", Value.ForString(dto.Prompt) } }
-//                     }
-//                 });
+            var request = new HttpRequestMessage
+            (
+                HttpMethod.Post,
+                "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+            );
 
-//                 // var contentList = new ListValue();
-//                 // contentList.Values.Add(new Value
-//                 // {
-//                 //     StructValue = new Struct
-//                 //     {
-//                 //         Fields =
-//                 // {
-//                 //     { "role", Value.ForString("user") },
-//                 //     { "parts", new Value { ListValue = partsList } }
-//                 // }
-//                 //     }
-//                 // });
+            request.Headers.Add("X-goog-api-key", apiKey);
+            request.Content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
 
-//                 // var request = new PredictRequest
-//                 // {
-//                 //     EndpointAsEndpointName = _endpointName,
-//                 // };
+            var response = await _httpClient.SendAsync(request);
 
-//                 // request.Instances.Add(new Value
-//                 // {
-//                 //     StructValue = new Struct
-//                 //     {
-//                 //         Fields =
-//                 // {
-//                 //     { "contents", new Value { ListValue = contentList } }
-//                 // }
-//                 //     }
-//                 // });
+            if (!response.IsSuccessStatusCode)
+            {
+                return new ResponseDto<GeminiResponseDto>
+                {
+                    Status = false,
+                    Message = $"Error: {response.StatusCode}, {await response.Content.ReadAsStringAsync()}"
+                };
+            }
 
-//                 var response = await _predictionServiceClient.PredictAsync(request);
-//                 var generatedText = GetTextFromPrediction(response);
+            var responseContent = await response.Content.ReadAsStreamAsync();
+            var jsonDoc = await JsonDocument.ParseAsync(responseContent);
 
-//                 return new ResponseDto<GeminiResponseDto>
-//                 {
-//                     StatusCode = HttpStatusCode.OK,
-//                     Status = true,
-//                     Message = "Respuesta generada correctamente.",
-//                     Data = new GeminiResponseDto { Response = generatedText ?? "No se pudo extraer una respuesta." }
-//                 };
-//             }
-//             catch (Exception ex)
-//             {
-//                 _logger.LogError(ex, "Error al generar contenido con Gemini");
-//                 return new ResponseDto<GeminiResponseDto>
-//                 {
-//                     StatusCode = HttpStatusCode.INTERNAL_SERVER_ERROR,
-//                     Status = false,
-//                     Message = $"Ocurrió un error al comunicarse con el servicio de Gemini: {ex.Message}"
-//                 };
-//             }
-//         }
+            var text = jsonDoc.RootElement
+                .GetProperty("candidates")[0]
+                .GetProperty("content")
+                .GetProperty("parts")[0]
+                .GetProperty("text")
+                .GetString();
 
-//         private string GetTextFromPrediction(PredictResponse predictionResponse)
-//         {
-//             var prediction = predictionResponse.Predictions.FirstOrDefault();
-//             if (prediction == null || !prediction.StructValue.Fields.TryGetValue("candidates", out var candidatesValue))
-//                 return null;
+            var responseDto = new GeminiResponseDto
+            {
+                Response = text ?? "No response from Gemini"
+            };
 
-//             var candidate = candidatesValue.ListValue.Values.FirstOrDefault();
-//             if (candidate == null || !candidate.StructValue.Fields.TryGetValue("content", out var contentValue))
-//                 return null;
-
-//             var part = contentValue.StructValue.Fields["parts"].ListValue.Values.FirstOrDefault();
-//             if (part == null || !part.StructValue.Fields.TryGetValue("text", out var textValue))
-//                 return null;
-
-//             return textValue.StringValue;
-//         }
-//     }
-// }
+            return new ResponseDto<GeminiResponseDto>
+            {
+                StatusCode = Constants.HttpStatusCode.OK,
+                Status = true,
+                Message = "Success",
+                Data = responseDto
+            };
+        }
+    }
+}

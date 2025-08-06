@@ -1,0 +1,21 @@
+meta {
+  name: Normal Prompt
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/gemini/generate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "prompt": "cuantas veces puedo cambiar de carrera"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

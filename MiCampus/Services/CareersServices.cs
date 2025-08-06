@@ -31,47 +31,7 @@ namespace MiCampus.Services
         // Get list de las carreras habilitadas
         public async Task<ResponseDto<PaginationDto<List<CareerActionResponseDto>>>> GetEnabledListAsync(
             string searchTerm = "", int page = 1, int pageSize = 0
-        )
-        {
-            pageSize = pageSize == 0 ? PAGE_SIZE : pageSize;
-
-            int startIndex = (page - 1) * pageSize;
-
-            IQueryable<CareerEntity> careerQuery = _context.Careers.Where(x => x.IsEnabled);
-
-            if (!string.IsNullOrEmpty(searchTerm))
-            {
-                careerQuery = careerQuery
-                    .Where(x => (x.Name + " " + x.Description)
-                    .Contains(searchTerm));
-            }
-
-            int totalRows = await careerQuery.CountAsync();
-
-            var careersEntity = await careerQuery
-                .OrderBy(x => x.Name)
-                .Skip(startIndex)
-                .Take(pageSize)
-                .ToListAsync();
-
-            var careersDtos = careersEntity.Adapt<List<CareerActionResponseDto>>();
-
-            return new ResponseDto<PaginationDto<List<CareerActionResponseDto>>>
-            {
-                StatusCode = HttpStatusCode.OK,
-                Data = new PaginationDto<List<CareerActionResponseDto>>
-                {
-                    CurrentPage = page,
-                    PageSize = pageSize,
-                    TotalItems = totalRows,
-                    TotalPages = (int)Math.Ceiling((double)totalRows / pageSize),
-                    Items = careersDtos,
-                    HasNextPage = startIndex + pageSize < PAGE_SIZE_LIMIT &&
-                        page < (int)Math.Ceiling((double)totalRows / pageSize),
-                    HasPreviousPage = page > 1
-                }
-            };
-        }
+        ) => await GetListAsync(searchTerm, "true", page, pageSize);
 
         //Get List de todas las carreras (para admin)
         public async Task<ResponseDto<PaginationDto<List<CareerActionResponseDto>>>> GetListAsync(
@@ -85,16 +45,9 @@ namespace MiCampus.Services
 
             IQueryable<CareerEntity> careerQuery = _context.Careers;
 
-            if (!string.IsNullOrEmpty(isEnabled))
+            if (bool.TryParse(isEnabled, out bool enabled))
             {
-                if (isEnabled.ToLower() == "true")
-                {
-                    careerQuery = careerQuery.Where(x => x.IsEnabled);
-                }
-                else if (isEnabled.ToLower() == "false")
-                {
-                    careerQuery = careerQuery.Where(x => !x.IsEnabled);
-                }
+                careerQuery = careerQuery.Where(x => x.IsEnabled == enabled);
             }
 
             if (!string.IsNullOrEmpty(searchTerm))

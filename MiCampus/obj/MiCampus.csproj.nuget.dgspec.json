@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Google.Cloud.AIPlatform.V1": {
               "target": "Package",
               "version": "[3.39.0, )"
@@ -109,6 +113,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.12.1, )"
+            },
+            "UglyToad.PdfPig": {
+              "target": "Package",
+              "version": "[1.7.0-custom-5, )"
             }
           },
           "imports": [
