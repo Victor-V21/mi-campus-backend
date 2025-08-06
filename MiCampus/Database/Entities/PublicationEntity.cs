@@ -18,6 +18,10 @@ namespace MiCampus.Database.Entities
         [ForeignKey("TypeId")]
         public PublicationTypeEntity Type { get; set; }
 
+        [Column("title")]
+        public string Title { get; set; }
+
+
         [Column("text")]
         public string Text { get; set; }
 
@@ -26,5 +30,10 @@ namespace MiCampus.Database.Entities
 
         [Column("date_modify")]
         public DateTime DateModify { get; set; }
+
+        public ICollection<PublicationImageEntity> Images { get; set; }
+
+        public ICollection<FeedbackEntity> Feedbacks { get; set; } = new List<FeedbackEntity>();
+
     }
 }

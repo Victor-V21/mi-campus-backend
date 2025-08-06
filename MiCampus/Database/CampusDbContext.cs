@@ -42,11 +42,14 @@ namespace MiCampus.Database
         public DbSet<NotificationEntity> Notifications { get; set; }
         public DbSet<NotificationTypeEntity> NotificationsTypes { get; set; }
         public DbSet<PublicationEntity> Publications { get; set; }
+
+        public DbSet<PublicationImageEntity> PublicationsImages { get; set; }
+
+        public DbSet<FeedbackEntity> Feedbacks { get; set; }
         public DbSet<PublicationTypeEntity> PublicationsTypes { get; set; }
         public DbSet<SubjectEntity> Subjects { get; set; }
         public DbSet<SubjectMovementEntity> SubjectMovements { get; set; }
         public DbSet<SubjectUserEntity> SubjectsUsers { get; set; }
-        public DbSet<NotificationTypeEntity> NotificationTypes { get; set; }
         public DbSet<CareerSubjectRequisiteEntity> CareerSubjectsRequisites { get; set; }
     }
 }
