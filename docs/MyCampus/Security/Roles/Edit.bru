@@ -1,0 +1,18 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/roles/5145910a-e557-493c-9042-d77908311f75
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "SYS_ADMIN_Editado",
+    "description": "Permiso para gestionar la seguridad de la aplicación |Editado"
+  }
+}

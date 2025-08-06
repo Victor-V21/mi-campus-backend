@@ -1,6 +1,8 @@
 using MiCampus.Configurations;
 using MiCampus.Database;
 using MiCampus.Database.Entities;
+using MiCampus.Extensions;
+using MiCampus.Filters;
 using MiCampus.Helpers;
 using MiCampus.Hubs;
 using MiCampus.Services;
@@ -39,8 +41,8 @@ builder.Services.AddSignalR();
 // db
 
 // Conexión a la base de datos WINDOWS
-// builder.Services.AddDbContext<CampusDbContext>(options =>
-// options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<CampusDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
@@ -70,6 +72,13 @@ builder.Services.AddHttpClient<GeminiServices>();
 builder.Services.AddTransient<IUsersServices, UsersServices>();
 builder.Services.AddTransient<IRolesService, RolesService>();
 builder.Services.AddTransient<ICampusesServices, CampusesServices>();
+builder.Services.AddTransient<IPublicationServices, PublicationServices>();
+builder.Services.AddTransient<IPublicationTypeServices, PublicationTypeService>();
+builder.Services.AddTransient<INotificationServices, NotificationServices>();
+builder.Services.AddTransient<INotificationTypeServices, NotificationTypeServices>();
+builder.Services.AddTransient<IAuthService, AuthService>();
+builder.Services.AddScoped<IAuditService, AuditService>();
+//builder.Services.AddTransient<ICareersServices, CareersServices>();
 builder.Services.AddTransient<IGradesServices, GradesServices>();
 builder.Services.AddTransient<ICareersServices, CareersServices>();
 builder.Services.AddTransient<ISubjectsServices, SubjectsServices>();
@@ -99,6 +108,9 @@ if (app.Environment.IsDevelopment())
 app.MapHub<ChatHub>("/chathub"); // Mapea el ChatHub a la URL "/chathub"
 
 app.UseHttpsRedirection();
+
+//Agreacion de los cors
+app.UseCors("CorsPolicy");
 
 app.UseAuthentication();
 app.UseAuthorization();

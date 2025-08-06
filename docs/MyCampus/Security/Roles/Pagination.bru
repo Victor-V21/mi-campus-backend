@@ -1,0 +1,17 @@
+meta {
+  name: Pagination
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PATH}}/roles?searchTerm&page=1&pageSize=10
+  body: none
+  auth: none
+}
+
+params:query {
+  searchTerm: 
+  page: 1
+  pageSize: 10
+}
