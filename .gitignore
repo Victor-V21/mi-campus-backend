@@ -8,6 +8,7 @@
 
 #Directories
 **/Migrations/
+**/obj/
 
 # User-specific files
 *.suo
@@ -28,6 +29,8 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
+bin/
+obj/
 [Ll]og/
 
 # Visual Studio 2015 cache/options directory
