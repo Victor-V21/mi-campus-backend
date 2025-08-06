@@ -8,6 +8,7 @@
 
 #Directories
 **/Migrations/
+**/obj/
 
 # User-specific files
 *.suo

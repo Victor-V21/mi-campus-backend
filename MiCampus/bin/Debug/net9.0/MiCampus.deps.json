@@ -10,10 +10,10 @@
         "dependencies": {
           "AutoMapper": "14.0.0",
           "DotNetEnv": "3.1.1",
-          "Google.Cloud.AIPlatform.V1": "3.39.0",
+          "Google.Cloud.AIPlatform.V1": "3.41.0",
           "JWT": "11.0.0",
           "Mapster": "7.4.2-pre02",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.6",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.8",
           "Microsoft.AspNetCore.Authorization": "9.0.6",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.6",
           "Microsoft.AspNetCore.OpenApi": "9.0.7",
@@ -169,7 +169,7 @@
           }
         }
       },
-      "Google.Cloud.AIPlatform.V1/3.39.0": {
+      "Google.Cloud.AIPlatform.V1/3.41.0": {
         "dependencies": {
           "Google.Api.Gax.Grpc": "4.11.0",
           "Google.Cloud.Iam.V1": "3.4.0",
@@ -178,8 +178,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Google.Cloud.AIPlatform.V1.dll": {
-            "assemblyVersion": "3.39.0.0",
-            "fileVersion": "3.39.0.0"
+            "assemblyVersion": "3.41.0.0",
+            "fileVersion": "3.41.0.0"
           }
         }
       },
@@ -312,14 +312,14 @@
           "Microsoft.Extensions.Options": "9.0.6"
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.6": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.8": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "8.0.1"
         },
         "runtime": {
           "lib/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
-            "assemblyVersion": "9.0.6.0",
-            "fileVersion": "9.0.625.26701"
+            "assemblyVersion": "9.0.8.0",
+            "fileVersion": "9.0.825.36808"
           }
         }
       },
@@ -859,22 +859,22 @@
           "runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm",
             "assetType": "native",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "5.1.1.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -2352,12 +2352,12 @@
       "path": "google.apis.core/1.69.0",
       "hashPath": "google.apis.core.1.69.0.nupkg.sha512"
     },
-    "Google.Cloud.AIPlatform.V1/3.39.0": {
+    "Google.Cloud.AIPlatform.V1/3.41.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1VaAx01ft0y8SaU+hAVTSwXZV29SMKMMvTtXCFpx7tyNweIJGKSTGZ/G0HBLm7Dn82aTxxaQIgb7KcZObcRKCg==",
-      "path": "google.cloud.aiplatform.v1/3.39.0",
-      "hashPath": "google.cloud.aiplatform.v1.3.39.0.nupkg.sha512"
+      "sha512": "sha512-Cq/gM/H3tlsykAAXDIQlRzUilLwatS43WMnj5LYfmrDx4ISlzeFHyDCKk1MBkqZtuDHInzGccZACSyCtQmziGA==",
+      "path": "google.cloud.aiplatform.v1/3.41.0",
+      "hashPath": "google.cloud.aiplatform.v1.3.41.0.nupkg.sha512"
     },
     "Google.Cloud.Iam.V1/3.4.0": {
       "type": "package",
@@ -2450,12 +2450,12 @@
       "path": "microsoft.aspnetcore.authentication.abstractions/2.3.0",
       "hashPath": "microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.6": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/9.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nH1mrzr77pk+n1E5+A/0KlzkNhqy3LS3gUGEjJf0PQE6PZAc3pr8rLwUATcaJMr/12qsxHT+kcvRZMxc4bxFpA==",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.6",
-      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.9.0.6.nupkg.sha512"
+      "sha512": "sha512-pEuE/xaXHk2Rr2YiTraS7i2MNoTXSnX79VlJcdKx9MczrhDfBO4tHdF4HWOo542WPbjSeZx2PFjmHygo0XnK3Q==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/9.0.8",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/9.0.6": {
       "type": "package",
