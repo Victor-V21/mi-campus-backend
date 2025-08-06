@@ -10,10 +10,16 @@ namespace MiCampus.Database.Entities
         [Column("name")]
         public string Name { get; set; }
 
-        [Column("grade")]
-        public string Grade { get; set; }
-
         [Column("description")]
         public string Description { get; set; }
+
+        [Column("id_grade")]
+        public string IdGrade { get; set; }
+
+        [ForeignKey("IdGrade")]
+        public GradeEntity AcademicGrade { get; set; }
+
+        // 🔹 Relación uno a muchos: Una carrera puede tener muchas materias
+        public ICollection<CareerSubjectEntity> CareerSubjects { get; set; }
     }
 }

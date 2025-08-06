@@ -1,0 +1,20 @@
+meta {
+  name: Edit ADMIN
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{PATH}}/subjects/1a0cdfe7-ef87-48e6-b7e9-ac5a7a22144e
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code": "IS-502",
+    "name": "Lenguajes de Programacion",
+    "description": "A no se",
+    "isEnabled": true
+  }
+}

@@ -5,26 +5,19 @@ meta {
 }
 
 put {
-  url: {{PATH}}/users/8ddda9ee-9b8c-44bb-8f86-e541b7eea6a5
+  url: {{PATH}}/users/
   body: json
-  auth: bearer
+  auth: inherit
 }
 
-auth:bearer {
-  token: {{TOKEN}}
+meta {
+  name: Edit
+  type: http
+  seq: 4
 }
 
-body:json {
-  {
-    "firstName": "Juana",
-    "lastName": "Mejía",
-    "email": "mejiajuana@gmail.com",
-    "birthDate": "2000-10-30",
-    "roles": [
-      
-      "SYS_ADMIN_Editado"
-    ],
-    "password": "ConTra2*",
-    "confirmPassword": "ConTra2*"
-  }
+put {
+  url: {{PATH}}/users/
+  body: json
+  auth: inherit
 }

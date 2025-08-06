@@ -1,0 +1,18 @@
+meta {
+  name: GetList ADMIN
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{PATH}}/careers/admin
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~isEnabled: false
+  ~searchTerm: 
+  ~page: 
+  ~pageSize: 
+}

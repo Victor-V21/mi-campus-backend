@@ -1,0 +1,35 @@
+meta {
+  name: Create ADMIN
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{PATH}}/careers
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "2 Ingenieria en Sistemas 9",
+    "idGrade": "2425d830-547d-4b82-92c8-9534f4986657",
+    "description": "Carrera de sistemas",
+    "subjects": [
+      {
+        "subjectId": "1a0cdfe7-ef87-48e6-b7e9-ac5a7a22144e",
+        "requisiteId": [
+          "28b4edab-9f65-4155-81a8-55104cdb8475",
+          "a2d16bd0-cdd4-47ae-a014-e40c5d0eef15"
+        ]
+      },
+      {
+        "subjectId": "fad918b6-236e-4782-b4e4-81956c0d2e81",
+        "requisiteId": [
+          "28b4edab-9f65-4155-81a8-55104cdb8475"
+        ]
+      }
+    ]
+  }
+  
+}

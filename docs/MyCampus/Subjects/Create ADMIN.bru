@@ -1,0 +1,23 @@
+meta {
+  name: Create ADMIN
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{PATH}}/subjects
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code": "IS-402",
+    "name": "Algoritmos y estructuras de datos",
+    "description": "Nose que va aqui"
+  }
+}
+
+body:multipart-form {
+  : @file()
+}

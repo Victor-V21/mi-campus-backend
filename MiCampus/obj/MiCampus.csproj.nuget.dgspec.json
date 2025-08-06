@@ -49,6 +49,14 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Google.Cloud.AIPlatform.V1": {
+              "target": "Package",
+              "version": "[3.41.0, )"
+            },
             "JWT": {
               "target": "Package",
               "version": "[11.0.0, )"
@@ -59,7 +67,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[9.0.6, )"
+              "version": "[9.0.8, )"
             },
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
@@ -72,6 +80,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.7, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -101,6 +113,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.12.1, )"
+            },
+            "UglyToad.PdfPig": {
+              "target": "Package",
+              "version": "[1.7.0-custom-5, )"
             }
           },
           "imports": [

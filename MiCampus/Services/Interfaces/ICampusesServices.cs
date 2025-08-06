@@ -13,5 +13,9 @@ namespace MiCampus.Services.Interfaces
                 string seachTerm = "", string isEnabled = "", int page = 1, int pageSize = 0);
         Task<ResponseDto<CampusDto>> EditAsync(string id, CampusEditDto dto);
         Task<ResponseDto<CampusDto>> GetOneByIdAsync(string id);
+
+        Task<ResponseDto<CampusDto>> AddCareerAsync(string campusId, string careerId);
+        Task<ResponseDto<CampuseCareerDto>> GetCareersByCampusAsync(string campusId, string careerId);
+        Task<ResponseDto<CampuseCareerDto>> RemoveCareerAsync(string campusId, string careerId);
     }
 }
