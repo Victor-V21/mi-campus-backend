@@ -16,7 +16,7 @@ using DotNetEnv;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpContextAccessor();
-
+//builder.WebHost.UseWebRoot("wwwroot"); ya no es compatible
 // Configuración de la duración del token de confirmación de correo
 builder.Services.Configure<DataProtectionTokenProviderOptions>(options =>
 {
@@ -46,8 +46,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
-builder.Services.AddDbContext<CampusDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
+//builder.Services.AddDbContext<CampusDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
 
 
 builder.Services.AddIdentity<UserEntity, RoleEntity>(options =>
@@ -114,6 +114,7 @@ app.UseCors("CorsPolicy");
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStaticFiles(); // para los servicios de imagen
 
 app.MapControllers();
 

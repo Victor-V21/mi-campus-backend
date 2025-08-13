@@ -1,0 +1,18 @@
+meta {
+  name: Create publication-types
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{PATH}}/publication-types
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Caminata al rio gran momento",
+    "description": "Una linda caminata que se realizara al rio el dia lunes 11 de agosto"
+  }
+}

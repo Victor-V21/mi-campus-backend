@@ -1,4 +1,6 @@
 ﻿using MiCampus.Database.Entities;
+using MiCampus.Dtos.Feedback;
+using MiCampus.Dtos.PublicationImage;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MiCampus.Dtos.Publication
@@ -12,11 +14,11 @@ namespace MiCampus.Dtos.Publication
 
         public string TypeId { get; set; }
         public string TypeName { get; set; }
-
         public string UserId { get; set; }
         public string UserName { get; set; }
 
-        public List<PublicationImageEntity> Images { get; set; } = new();
-        public List<FeedbackEntity> Feedbacks { get; set; } = new();
+        public List<FeedbackDto> Feedbacks { get; set; } = new();
+
+        public List<PublicationImageDto> Images { get; set; } = new();
     }
 }

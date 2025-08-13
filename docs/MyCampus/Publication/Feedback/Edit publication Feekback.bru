@@ -1,0 +1,19 @@
+meta {
+  name: Edit publication Feekback
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{PATH}}/publication/feedback/427115f0-0e70-4afa-b9ea-048d87dd7683
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "comment": "Excelente publicación, muy informativa bueno al menos   o no se jeje .",
+    "rating": 9,
+    "userId": "70748329-73a8-4fa4-934a-2af15e7bec87"
+  }
+}

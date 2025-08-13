@@ -1,0 +1,28 @@
+meta {
+  name: Create Imagen Publication
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{PATH}}/publication/4ce5d6e7-6a16-45cc-b6f8-23605c77eb19/images
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Content-Type: multipart/form-data
+}
+
+body:json {
+  {
+    "userId": "70748329-73a8-4fa4-934a-2af15e7bec87",
+    "typeId": "6bd8aa24-e15e-4322-81cd-86bfa6bdcf03",
+    "title": "Vista al rios",
+    "text": "Una maravillosa excursion al rio"
+  }
+}
+
+body:multipart-form {
+  file: @file(C:\Users\FERCHITA\Downloads\images.jpeg) @contentType(image/jpeg)
+}

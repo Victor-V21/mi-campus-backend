@@ -11,6 +11,7 @@ namespace MiCampus.Database.Entities
         public string Comment { get; set; }
         public int Rating { get; set; }  
         public DateTime CreatedAt { get; set; }
+        public DateTime? DateModified { get; set; }
 
         public PublicationEntity Publication { get; set; }
         public UserEntity User { get; set; }

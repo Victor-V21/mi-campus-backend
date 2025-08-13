@@ -20,5 +20,6 @@ namespace MiCampus.Database.Entities
 
         [Column("date_upload")]
         public DateTime DateUpload { get; set; }
+
     }
 }

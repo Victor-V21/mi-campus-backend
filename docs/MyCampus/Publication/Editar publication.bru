@@ -1,0 +1,20 @@
+meta {
+  name: Editar publication
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/publication/7a13395e-e977-4d26-98f0-1cfb05f96ed8
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userId": "70748329-73a8-4fa4-934a-2af15e7bec87",
+    "typeId": "6bd8aa24-e15e-4322-81cd-86bfa6bdcf03",
+    "title": "Prueba editada",
+    "text": "Una maravillosa excursion al rio"
+  }
+}

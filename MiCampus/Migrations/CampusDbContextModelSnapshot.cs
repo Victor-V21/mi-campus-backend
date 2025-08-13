@@ -302,6 +302,59 @@ namespace MiCampus.Migrations
                     b.ToTable("chats");
                 });
 
+            modelBuilder.Entity("MiCampus.Database.Entities.FeedbackEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime?>("DateModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
+                    b.Property<string>("PublicationId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PublicationId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("publications_feedback");
+                });
+
             modelBuilder.Entity("MiCampus.Database.Entities.GradeEntity", b =>
                 {
                     b.Property<string>("Id")
@@ -471,6 +524,10 @@ namespace MiCampus.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("text");
 
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("title");
+
                     b.Property<string>("TypeId")
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id_type");
@@ -494,6 +551,55 @@ namespace MiCampus.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("publications");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationImageEntity", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("created_date");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("created_by");
+
+                    b.Property<DateTime>("DateUpload")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("date_upload");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("file_name");
+
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("bit")
+                        .HasColumnName("is_enabled");
+
+                    b.Property<string>("PublicationId")
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id_publication");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("updated_date");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("updated_by");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("url");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PublicationId");
+
+                    b.ToTable("publications_images");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.PublicationTypeEntity", b =>
@@ -922,7 +1028,7 @@ namespace MiCampus.Migrations
             modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>
                 {
                     b.HasOne("MiCampus.Database.Entities.CareerEntity", "Career")
-                        .WithMany()
+                        .WithMany("CareerSubjects")
                         .HasForeignKey("CareerId");
 
                     b.HasOne("MiCampus.Database.Entities.SubjectEntity", "Subject")
@@ -964,6 +1070,21 @@ namespace MiCampus.Migrations
                     b.Navigation("Receptor");
                 });
 
+            modelBuilder.Entity("MiCampus.Database.Entities.FeedbackEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.PublicationEntity", "Publication")
+                        .WithMany("Feedbacks")
+                        .HasForeignKey("PublicationId");
+
+                    b.HasOne("MiCampus.Database.Entities.UserEntity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Publication");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MiCampus.Database.Entities.NotificationEntity", b =>
                 {
                     b.HasOne("MiCampus.Database.Entities.NotificationTypeEntity", "Type")
@@ -992,6 +1113,15 @@ namespace MiCampus.Migrations
                     b.Navigation("Type");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationImageEntity", b =>
+                {
+                    b.HasOne("MiCampus.Database.Entities.PublicationEntity", "Publication")
+                        .WithMany("Images")
+                        .HasForeignKey("PublicationId");
+
+                    b.Navigation("Publication");
                 });
 
             modelBuilder.Entity("MiCampus.Database.Entities.SubjectUserEntity", b =>
@@ -1075,9 +1205,21 @@ namespace MiCampus.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MiCampus.Database.Entities.CareerEntity", b =>
+                {
+                    b.Navigation("CareerSubjects");
+                });
+
             modelBuilder.Entity("MiCampus.Database.Entities.CareerSubjectEntity", b =>
                 {
                     b.Navigation("Requisites");
+                });
+
+            modelBuilder.Entity("MiCampus.Database.Entities.PublicationEntity", b =>
+                {
+                    b.Navigation("Feedbacks");
+
+                    b.Navigation("Images");
                 });
 #pragma warning restore 612, 618
         }

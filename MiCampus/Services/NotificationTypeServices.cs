@@ -17,5 +17,6 @@ namespace MiCampus.Services
             PAGE_SIZE = configuration.GetValue<int>("PageSize");
             PAGE_SIZE_LIMIT = configuration.GetValue<int>("PageSizeLimit");
         }
+
     }
 }

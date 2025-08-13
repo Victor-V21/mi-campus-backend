@@ -1,0 +1,22 @@
+meta {
+  name: Create Role
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{PATH}}/roles
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "name": "ADMIN_SYSTEM",
+    "description": "Usuario de prueba"
+  }
+}
