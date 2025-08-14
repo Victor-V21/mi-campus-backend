@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\MiCampus.csproj": {}
+    "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\MiCampus.csproj": {
+    "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\MiCampus.csproj",
+        "projectUniqueName": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj",
         "projectName": "MiCampus",
-        "projectPath": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\MiCampus.csproj",
-        "packagesPath": "C:\\Users\\FERCHITA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\obj\\",
+        "projectPath": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj",
+        "packagesPath": "/home/vic/.nuget/packages/",
+        "outputPath": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\FERCHITA\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/vic/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,6 +110,18 @@
               "target": "Package",
               "version": "[9.0.3, )"
             },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[8.12.1, )"
@@ -143,7 +150,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.107/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

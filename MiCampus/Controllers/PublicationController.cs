@@ -94,6 +94,7 @@ namespace MiCampus.Controllers
         //agremamos imagenes a la publicaciones
 
         [HttpPost("{publicationId}/images")]
+        [Consumes("multipart/form-data")]
         public async Task<ActionResult<ResponseDto<object>>> UploadImageAsync(
          [FromRoute] string publicationId, [FromForm] IFormFile file)
         {

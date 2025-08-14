@@ -12,8 +12,32 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Scalar.AspNetCore;
 using DotNetEnv;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+
+        ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+        ValidAudience = builder.Configuration["JWT:ValidAudience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+    };
+});
 
 builder.Services.AddHttpContextAccessor();
 //builder.WebHost.UseWebRoot("wwwroot"); ya no es compatible
@@ -41,14 +65,13 @@ builder.Services.AddSignalR();
 // db
 
 // Conexión a la base de datos WINDOWS
-builder.Services.AddDbContext<CampusDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// builder.Services.AddDbContext<CampusDbContext>(options =>
+// options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // si se hace una migracion en linux, se debe usar la siguiente cadena de conexión
 // para evitar problemas de compatibilidad con el servidor SQL Server en Linux.
-//builder.Services.AddDbContext<CampusDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
-
+builder.Services.AddDbContext<CampusDbContext>(options =>
+   options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultLinuxConnection")));
 
 builder.Services.AddIdentity<UserEntity, RoleEntity>(options =>
 {
@@ -91,6 +114,20 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOpenApi();
 
+var allowUrls = builder.Configuration.GetSection("AllowURLS").Get<string[]>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", policy =>
+    {
+        policy.WithOrigins(allowUrls) // usa la lista del appsettings.json
+              .AllowAnyMethod()
+              .AllowAnyHeader()
+              .AllowCredentials();
+    });
+});
+
+
 // Cargar el archivo .env
 DotNetEnv.Env.Load();
 
@@ -119,14 +156,3 @@ app.UseStaticFiles(); // para los servicios de imagen
 app.MapControllers();
 
 app.Run();
-
-
-/*
-    usuarios:
-        -falta asociar los usuarios a las carreras
-        -falta asociar los usuarios a las clases que lleva o que imparte
-        
-    chats:
-        -faltan los chats entre usuarios
-        -falta implementar chatbot*
-*/
