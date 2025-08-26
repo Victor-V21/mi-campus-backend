@@ -1531,6 +1531,32 @@
   },
   {
     "ContainingType": "MiCampus.Controllers.UsersController",
+    "Method": "GetOneByEmail",
+    "RelativePath": "api/users/email/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiCampus.Dtos.Common.ResponseDto\u00601[[MiCampus.Dtos.Security.Users.UserDto, MiCampus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MiCampus.Controllers.UsersController",
     "Method": "Register",
     "RelativePath": "api/users/register",
     "HttpMethod": "POST",

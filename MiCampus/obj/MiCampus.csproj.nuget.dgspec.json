@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj": {}
+    "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\MiCampus.csproj": {}
   },
   "projects": {
-    "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj": {
+    "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\MiCampus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj",
+        "projectUniqueName": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\MiCampus.csproj",
         "projectName": "MiCampus",
-        "projectPath": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/MiCampus.csproj",
-        "packagesPath": "/home/vic/.nuget/packages/",
-        "outputPath": "/home/vic/Universidad/lenguajes de programación/myprojects/mi-campus-backend/MiCampus/obj/",
+        "projectPath": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\MiCampus.csproj",
+        "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vic/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -150,7 +155,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

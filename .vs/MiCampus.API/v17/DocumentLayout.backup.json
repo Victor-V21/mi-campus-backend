@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\helpers\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\helpers\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\services\\publicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\publicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\usersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\controllers\\publicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\controllers\\publicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\services\\geminiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\geminiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\ferchita\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\micampus\\services\\interfaces\\ipublicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\services\\interfaces\\ipublicationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|c:\\users\\victor\\projects\\proyecto\\mi-campus-backend\\micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70E16F1-DCA7-4EA1-9D96-B4683D7D4F0E}|MiCampus\\MiCampus.csproj|solutionrelative:micampus\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,33 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MapsterConfig.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Helpers\\MapsterConfig.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Helpers\\MapsterConfig.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Helpers\\MapsterConfig.cs",
-              "RelativeToolTip": "MiCampus\\Helpers\\MapsterConfig.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T08:09:52.114Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IPublicationServices.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\IPublicationServices.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\Interfaces\\IPublicationServices.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\Interfaces\\IPublicationServices.cs",
-              "RelativeToolTip": "MiCampus\\Services\\Interfaces\\IPublicationServices.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:09:05.055Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -60,28 +46,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PublicationController.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Controllers\\PublicationController.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Controllers\\PublicationController.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Controllers\\PublicationController.cs",
-              "RelativeToolTip": "MiCampus\\Controllers\\PublicationController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAIwH8AAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MiCampus\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAGEAAAAAYGZmZmb2v3kAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:08:30.32Z",
+              "WhenOpened": "2025-08-24T19:43:28.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PublicationServices.cs",
-              "DocumentMoniker": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\PublicationServices.cs",
-              "RelativeDocumentMoniker": "MiCampus\\Services\\PublicationServices.cs",
-              "ToolTip": "C:\\Users\\FERCHITA\\projects\\proyecto_final_lenguajes\\mi-campus-backend\\MiCampus\\Services\\PublicationServices.cs",
-              "RelativeToolTip": "MiCampus\\Services\\PublicationServices.cs",
-              "ViewState": "AgIAAGkCAAAAAAAAAAAcwIcCAAAAAAAAAAAAAA==",
+              "Title": "UsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\UsersServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\UsersServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\UsersServices.cs",
+              "ViewState": "AgIAAJgBAAAAbGZmZmYWwDcCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:34:01.435Z",
+              "WhenOpened": "2025-08-24T19:42:04.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GeminiServices.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\GeminiServices.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Services\\GeminiServices.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Services\\GeminiServices.cs",
+              "RelativeToolTip": "MiCampus\\Services\\GeminiServices.cs",
+              "ViewState": "AgIAABMAAADA//////8pwCIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T19:24:13.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\.env",
+              "RelativeDocumentMoniker": "MiCampus\\.env",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\.env",
+              "RelativeToolTip": "MiCampus\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-24T19:23:49.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
+              "RelativeDocumentMoniker": "MiCampus\\Program.cs",
+              "ToolTip": "C:\\Users\\Victor\\projects\\Proyecto\\mi-campus-backend\\MiCampus\\Program.cs",
+              "RelativeToolTip": "MiCampus\\Program.cs",
+              "ViewState": "AgIAAJEAAAAANDMzMzMbwHsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:00:20.732Z",
               "EditorCaption": ""
             }
           ]

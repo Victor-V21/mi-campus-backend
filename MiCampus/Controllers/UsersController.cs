@@ -80,6 +80,20 @@ namespace MiCampus.Controllers
             });
         }
 
+        [HttpGet("email/{email}")]
+        public async Task<ActionResult<ResponseDto<UserDto>>> GetOneByEmail(string email)
+        {
+            var response = await _usersService.GetUserByEmailAsync(email);
+
+            return StatusCode(response.StatusCode, new ResponseDto<UserDto>
+            {
+                StatusCode = response.StatusCode,
+                Status = response.Status,
+                Message = response.Message,
+                Data = response.Data,
+            });
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ResponseDto<PaginationDto<UserDto>>>> GetOne(string id)
         {

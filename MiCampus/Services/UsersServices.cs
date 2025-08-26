@@ -551,5 +551,30 @@ namespace MiCampus.Services
                 };
             }
         }
+
+        public async Task<ResponseDto<UserDto>> GetUserByEmailAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user is null)
+            {
+                return new ResponseDto<UserDto>
+                {
+                    StatusCode = Constants.HttpStatusCode.NOT_FOUND,
+                    Status = false,
+                    Message = "Registro no encontrado",
+                };
+            }
+
+            var response = user.Adapt<UserDto>();
+
+            return new ResponseDto<UserDto>
+            {
+                StatusCode = Constants.HttpStatusCode.OK,
+                Status = true,
+                Message = "Registro encontrado",
+                Data = response
+            };
+        }
     }
 }
